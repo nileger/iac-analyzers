@@ -1,0 +1,47 @@
+name: terraform-compliance
+toolSupport:
+  - terraform
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+  - compliance
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/terraform-compliance/cli
+  stars: 1186
+  contributors: 40
+  license: MIT
+  backers: community
+release:
+  firstRelease: 19.06.2018
+  lastRelease: 09.06.2022
+rules:
+  builtInChecks: false
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://terraform-compliance.com/
+  webApplication:
+  installation:
+    - pip
+    - docker
+  autoFix: false
+  output:
+    - text
+implementation:
+  languages:
+    - python
+    - hcl
+    - gherkin
+  ruleImplementation:
+    - bdd

@@ -1,0 +1,57 @@
+# keep-local can be used to not send the results to the armo portal
+name: kubescape
+toolSupport:
+  - kubernetes
+  - helm
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+developmentSupport:
+  ide:
+    - vs-code
+  ci:
+    - jenkins
+    - circleci
+    - gitlab ci
+    - github actions
+    - azure pipelines
+  vc:
+repository:
+  url: https://github.com/armosec/kubescape
+  stars: 6843
+  contributors: 75
+  license: Apache-2.0
+  backers: armo
+release:
+  firstRelease: 12.08.2021
+  lastRelease: 05.09.2022
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://hub.armosec.io/docs
+  webApplication:
+  installation:
+    - binary
+    - brew
+    - nix
+  autoFix:
+  output:
+    - pretty-printer
+    - json
+    - junit
+    - prometheus
+    - pdf
+implementation:
+  languages:
+    - go
+  ruleImplementation:
+    - rego

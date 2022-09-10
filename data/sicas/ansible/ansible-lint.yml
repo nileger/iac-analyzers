@@ -1,0 +1,58 @@
+name: ansible-lint
+toolSupport:
+  - ansible
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+  vc:
+repository:
+  url: https://github.com/ansible/ansible-lint
+  stars: 2871
+  contributors: 203
+  license: GPL-3.0
+  backers: community
+release:
+  firstRelease: 30.06.2016
+  lastRelease: 01.09.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: A
+    link: https://ansible-lint.readthedocs.io/en/latest/
+  webApplication:
+  installation:
+    - pip
+  autoFix: true
+  output:
+    - rich
+    - plain
+    - md
+    - json
+    - codeclimate
+    - quiet
+    - pep8
+    - sarif
+implementation:
+  languages:
+    - python
+  ruleImplementation:
+    - python

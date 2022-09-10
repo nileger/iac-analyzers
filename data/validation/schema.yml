@@ -1,0 +1,45 @@
+name: str()
+toolSupport: any(list(str()), null())
+fileSupport: any(list(str()), null())
+builtIn: bool()
+includedTools: any(list(str()), null())
+categories: any(list(str()), null())
+developmentSupport:
+  ide: any(list(str()), null())
+  ci: any(list(str()), null())
+  vc: any(list(str()), null())
+repository:
+  url: any(str(), null())
+  stars: any(num(), null())
+  contributors: any(num(), null())
+  license: any(str(), null())
+  backers: any(str(), null())
+release:
+  firstRelease: any(str(), null())
+  lastRelease: any(str(), null())
+rules:
+  builtInChecks: any(bool(), null())
+  customChecks: any(bool(), null())
+  blacklistChecks: any(bool(), null())
+  ignoreFindings: any(bool(), null())
+  whitelistChecks: any(bool(), null())
+experiments: any(list(include('experiment')), null())
+usage:
+  documentation:
+    quality: any(str(), null())
+    link: any(str(), null())
+  webApplication: any(str(), null())
+  installation: any(list(str()), null())
+  autoFix: any(bool(), null())
+  output: any(list(str()), null()) 
+implementation:
+  languages: any(list(str()), null())
+  ruleImplementation: any(list(str()), null())
+---
+experiment:
+  name: str()
+  executedBy: any(list(str()), null())
+  dateOfExperiment: any(str(), null())
+  truePositives: any(num(), null())
+  falsePositives: any(num(), null())
+  speed: any(num(), null())

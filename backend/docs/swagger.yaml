@@ -1,0 +1,557 @@
+basePath: /api/
+definitions:
+  iac-analyzers.SICA:
+    properties:
+      builtIn:
+        type: boolean
+      categories:
+        items:
+          type: string
+        type: array
+      developmentSupport:
+        properties:
+          ci:
+            items:
+              type: string
+            type: array
+          ide:
+            items:
+              type: string
+            type: array
+          vc:
+            items:
+              type: string
+            type: array
+        type: object
+      experiments:
+        description: Must be based on experiment with author and link
+        items:
+          properties:
+            dateOfExperiment:
+              type: string
+            executedBy:
+              items:
+                type: string
+              type: array
+            falsePositives:
+              type: integer
+            name:
+              type: string
+            speed:
+              type: integer
+            truePositives:
+              type: integer
+          type: object
+        type: array
+      fileSupport:
+        items:
+          type: string
+        type: array
+      implementation:
+        properties:
+          languages:
+            items:
+              type: string
+            type: array
+          ruleImplementation:
+            items:
+              type: string
+            type: array
+        type: object
+      includedTools:
+        items:
+          type: string
+        type: array
+      name:
+        type: string
+      release:
+        properties:
+          firstRelease:
+            type: string
+          lastRelease:
+            type: string
+        type: object
+      repository:
+        properties:
+          backers:
+            type: string
+          contributors:
+            type: integer
+          license:
+            type: string
+          stars:
+            type: integer
+          url:
+            type: string
+        type: object
+      rules:
+        properties:
+          blacklistChecks:
+            type: boolean
+          builtInChecks:
+            type: boolean
+          customChecks:
+            type: boolean
+          ignoreFindings:
+            type: boolean
+          whitelistChecks:
+            type: boolean
+        type: object
+      score:
+        description: '* This field is not read from the YAML files but assigned during
+          the filtering process'
+        type: number
+      toolSupport:
+        items:
+          type: string
+        type: array
+      usage:
+        properties:
+          autoFix:
+            type: boolean
+          documentation:
+            properties:
+              link:
+                type: string
+              quality:
+                type: string
+            type: object
+          installation:
+            items:
+              type: string
+            type: array
+          output:
+            items:
+              type: string
+            type: array
+          webApplication:
+            type: string
+        type: object
+    type: object
+  iac-analyzers.Stats:
+    properties:
+      builtInTools:
+        properties:
+          toolSupport:
+            additionalProperties:
+              type: integer
+            type: object
+        type: object
+      general:
+        properties:
+          autofix:
+            type: integer
+          license:
+            additionalProperties:
+              type: integer
+            type: object
+          webApplications:
+            additionalProperties:
+              type: string
+            type: object
+        type: object
+      metaTools:
+        properties:
+          includedTools:
+            additionalProperties:
+              type: integer
+            type: object
+        type: object
+      thirdPartyTools:
+        properties:
+          averageStars:
+            type: number
+          categories:
+            additionalProperties:
+              type: integer
+            type: object
+          communityBacked:
+            type: integer
+          developmentSupport:
+            properties:
+              ci:
+                additionalProperties:
+                  type: integer
+                type: object
+              ide:
+                additionalProperties:
+                  type: integer
+                type: object
+              vc:
+                additionalProperties:
+                  type: integer
+                type: object
+            type: object
+          fileSupport:
+            additionalProperties:
+              type: integer
+            type: object
+          implementation:
+            properties:
+              programmingLanguages:
+                additionalProperties:
+                  type: integer
+                type: object
+              ruleLanguages:
+                additionalProperties:
+                  type: integer
+                type: object
+            type: object
+          installationMethods:
+            additionalProperties:
+              type: integer
+            type: object
+          output:
+            additionalProperties:
+              type: integer
+            type: object
+          rules:
+            properties:
+              blacklistChecks:
+                type: integer
+              builtInChecks:
+                type: integer
+              customChecks:
+                type: integer
+              ignoreFindings:
+                type: integer
+              whitelistChecks:
+                type: integer
+            type: object
+          stars:
+            type: integer
+          toolSupport:
+            additionalProperties:
+              type: integer
+            type: object
+        type: object
+      toolNumbers:
+        properties:
+          numberOfBuiltInTools:
+            type: integer
+          numberOfMetaTools:
+            type: integer
+          numberOfThirdPartyTools:
+            type: integer
+          totalNumberOfSicas:
+            type: integer
+        type: object
+    type: object
+  iac-analyzers_tmp_iac-analyzers_backend.SICA:
+    properties:
+      builtIn:
+        type: boolean
+      categories:
+        items:
+          type: string
+        type: array
+      developmentSupport:
+        properties:
+          ci:
+            items:
+              type: string
+            type: array
+          ide:
+            items:
+              type: string
+            type: array
+          vc:
+            items:
+              type: string
+            type: array
+        type: object
+      experiments:
+        description: Must be based on experiment with author and link
+        items:
+          properties:
+            dateOfExperiment:
+              type: string
+            executedBy:
+              items:
+                type: string
+              type: array
+            falsePositives:
+              type: integer
+            name:
+              type: string
+            speed:
+              type: integer
+            truePositives:
+              type: integer
+          type: object
+        type: array
+      fileSupport:
+        items:
+          type: string
+        type: array
+      implementation:
+        properties:
+          languages:
+            items:
+              type: string
+            type: array
+          ruleImplementation:
+            items:
+              type: string
+            type: array
+        type: object
+      includedTools:
+        items:
+          type: string
+        type: array
+      name:
+        type: string
+      release:
+        properties:
+          firstRelease:
+            type: string
+          lastRelease:
+            type: string
+        type: object
+      repository:
+        properties:
+          backers:
+            type: string
+          contributors:
+            type: integer
+          license:
+            type: string
+          stars:
+            type: integer
+          url:
+            type: string
+        type: object
+      rules:
+        properties:
+          blacklistChecks:
+            type: boolean
+          builtInChecks:
+            type: boolean
+          customChecks:
+            type: boolean
+          ignoreFindings:
+            type: boolean
+          whitelistChecks:
+            type: boolean
+        type: object
+      score:
+        description: '* This field is not read from the YAML files but assigned during
+          the filtering process'
+        type: number
+      toolSupport:
+        items:
+          type: string
+        type: array
+      usage:
+        properties:
+          autoFix:
+            type: boolean
+          documentation:
+            properties:
+              link:
+                type: string
+              quality:
+                type: string
+            type: object
+          installation:
+            items:
+              type: string
+            type: array
+          output:
+            items:
+              type: string
+            type: array
+          webApplication:
+            type: string
+        type: object
+    type: object
+  iac-analyzers_tmp_iac-analyzers_backend.Stats:
+    properties:
+      builtInTools:
+        properties:
+          toolSupport:
+            additionalProperties:
+              type: integer
+            type: object
+        type: object
+      general:
+        properties:
+          autofix:
+            type: integer
+          license:
+            additionalProperties:
+              type: integer
+            type: object
+          webApplications:
+            additionalProperties:
+              type: string
+            type: object
+        type: object
+      metaTools:
+        properties:
+          includedTools:
+            additionalProperties:
+              type: integer
+            type: object
+        type: object
+      thirdPartyTools:
+        properties:
+          averageStars:
+            type: number
+          categories:
+            additionalProperties:
+              type: integer
+            type: object
+          communityBacked:
+            type: integer
+          developmentSupport:
+            properties:
+              ci:
+                additionalProperties:
+                  type: integer
+                type: object
+              ide:
+                additionalProperties:
+                  type: integer
+                type: object
+              vc:
+                additionalProperties:
+                  type: integer
+                type: object
+            type: object
+          fileSupport:
+            additionalProperties:
+              type: integer
+            type: object
+          implementation:
+            properties:
+              programmingLanguages:
+                additionalProperties:
+                  type: integer
+                type: object
+              ruleLanguages:
+                additionalProperties:
+                  type: integer
+                type: object
+            type: object
+          installationMethods:
+            additionalProperties:
+              type: integer
+            type: object
+          output:
+            additionalProperties:
+              type: integer
+            type: object
+          rules:
+            properties:
+              blacklistChecks:
+                type: integer
+              builtInChecks:
+                type: integer
+              customChecks:
+                type: integer
+              ignoreFindings:
+                type: integer
+              whitelistChecks:
+                type: integer
+            type: object
+          stars:
+            type: integer
+          toolSupport:
+            additionalProperties:
+              type: integer
+            type: object
+        type: object
+      toolNumbers:
+        properties:
+          numberOfBuiltInTools:
+            type: integer
+          numberOfMetaTools:
+            type: integer
+          numberOfThirdPartyTools:
+            type: integer
+          totalNumberOfSicas:
+            type: integer
+        type: object
+    type: object
+host: iac-analyzers.dev
+info:
+  contact:
+    email: nils.leger@iubh.de
+    name: Nils Leger
+    url: https://twitter.com/NilsLeger
+  description: The API for the IaC Analyzers Guide
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: IaC Analyzers Guide
+  version: "1.0"
+paths:
+  /health:
+    get:
+      description: Health Endpoint
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: status
+          schema:
+            type: ""
+      summary: Return the health status of the application
+      tags:
+      - health
+  /sicas:
+    post:
+      consumes:
+      - application/json
+      description: Filter the SICAs according the provided requirements
+      parameters:
+      - description: The requirements
+        in: body
+        name: message
+        required: true
+        schema:
+          $ref: '#/definitions/iac-analyzers_tmp_iac-analyzers_backend.SICA'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: IaC Analyzers
+          schema:
+            items:
+              $ref: '#/definitions/iac-analyzers_tmp_iac-analyzers_backend.SICA'
+            type: array
+      summary: Filter the SICAs
+      tags:
+      - sicas
+  /sicas/options:
+    get:
+      description: Returns all supported options, e.g., all the supported IaC tools
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Options
+          schema:
+            $ref: '#/definitions/iac-analyzers_tmp_iac-analyzers_backend.SICA'
+      summary: Returns all supported options
+      tags:
+      - sicas
+  /sicas/stats:
+    get:
+      description: Returns statistics about the SICAs, e.g., the number of tools that
+        support Terraform
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Statistics
+          schema:
+            $ref: '#/definitions/iac-analyzers_tmp_iac-analyzers_backend.Stats'
+      summary: Returns statistics about the SICAs
+      tags:
+      - statistics
+schemes:
+- http
+- https
+swagger: "2.0"

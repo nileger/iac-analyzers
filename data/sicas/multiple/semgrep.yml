@@ -1,0 +1,58 @@
+# rule registry: https://github.com/returntocorp/semgrep-rules
+name: semgrep
+toolSupport:
+  - terraform
+  - dockerfile
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+    - gitlab ci
+    - circleci
+    - jenkins
+    - buildkite
+  vc:
+repository:
+  url: https://github.com/returntocorp/semgrep
+  stars: 7039
+  contributors: 113
+  license: GNU2
+  backers: r2c
+release:
+  firstRelease: 06.02.2020
+  lastRelease: 08.09.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: true
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://semgrep.dev/docs/
+  webApplication: https://semgrep.dev/playground/new
+  installation:
+    - brew
+    - pip
+  autoFix: true
+  output:
+    - emacs
+    - json
+    - gitlab-sast
+    - gitlab-secrets
+    - junit-xml
+    - sarif
+    - vim
+implementation:
+  languages:
+    - ocaml
+    - python
+  ruleImplementation:
+    - yaml

@@ -1,0 +1,172 @@
+defaults:
+  run:
+    working-directory: ./terraform/
+
+name: Lint, Build, Release, and Deploy
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  # Validate the YAML files
+  validate-yaml:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.5'  
+      - name: Install packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        working-directory: data/validation/
+      - name: Validate the YAML files
+        run: python validate.py
+        shell: sh
+        working-directory: data/validation/
+  # Geneate a new Version
+  generate-semantic-version:
+    name: Generate semantic version
+    needs: [validate-yaml]
+    runs-on: ubuntu-22.04
+    outputs:
+      next-version: ${{ steps.sem-ver.outputs.version }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: paulhatch/semantic-version@v4.0.3
+        id: sem-ver
+        # Major and Minor patterns are adopted from the Coventional Commits Guidelines
+        with:
+          tag_prefix: "v"
+          major_pattern: "feat!"
+          minor_pattern: "feat:"
+          format: "v${major}.${minor}.${patch}"
+          bump_each_commit: true
+  # Lint the Dockerfile
+  hadolint:
+    name: hadolint
+    needs: [validate-yaml]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 
+      - uses: hadolint/hadolint-action@v2.0.0
+  # Build and Push the Docker Image
+  docker:
+    needs: [hadolint, generate-semantic-version]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to DockerHub
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          push: true
+          tags: nileger/iac-analyzers:${{ needs.generate-semantic-version.outputs.next-version }}
+  # Run tfsec on the Terraform files
+  tfsec:
+    name: tfsec
+    needs: [validate-yaml]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@master
+      - name: tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
+        with:
+          working_directory: terraform/
+  # Create a New GitHub Release
+  release:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: [hadolint, tfsec, generate-semantic-version]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
+    steps:
+    - uses: actions/checkout@v2
+      with:
+          fetch-depth: 0
+    - uses: mikepenz/release-changelog-builder-action@v3
+      id: build_changelog
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: ncipollo/release-action@v1
+      with:
+        commit: main
+        body: ${{ steps.build_changelog.outputs.changelog }}
+        tag: ${{ needs.generate-semantic-version.outputs.next-version }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+  # Lint the Terraform Code and Deploy the Application via Terraform Cloud
+  terraform:
+    needs: [release, tfsec, generate-semantic-version, docker]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+      - name: Terraform Format
+        id: fmt
+        run: terraform fmt -check
+      - name: Terraform Init
+        id: init
+        run: terraform init
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate -no-color
+      - name: Terraform Plan
+        id: plan
+        if: github.event_name == 'pull_request'
+        run: terraform plan -no-color -input=false -var image_tag=${{ needs.generate-semantic-version.outputs.next-version }}
+        continue-on-error: true
+      - uses: actions/github-script@v6
+        if: github.event_name == 'pull_request'
+        env:
+          PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const output = `#### Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
+            #### Terraform Initialization ⚙️\`${{ steps.init.outcome }}\`
+            #### Terraform Validation 🤖\`${{ steps.validate.outcome }}\`
+            #### Terraform Plan 📖\`${{ steps.plan.outcome }}\`
+            <details><summary>Show Plan</summary>
+            \`\`\`\n
+            ${process.env.PLAN}
+            \`\`\`
+            </details>
+            *Pushed by: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
+      - name: Terraform Plan Status
+        if: steps.plan.outcome == 'failure'
+        run: exit 1
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: terraform apply -auto-approve -input=false -var image_tag=${{ needs.generate-semantic-version.outputs.next-version }}

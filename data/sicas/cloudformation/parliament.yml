@@ -1,0 +1,43 @@
+name: parliament
+toolSupport:
+  - cloudformation
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - iam
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/duo-labs/parliament
+  stars: 832
+  contributors: 28
+  license: BSD-3
+  backers: duo security
+release:
+  firstRelease: 20.11.2019
+  lastRelease: 06.09.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://github.com/duo-labs/parliament/blob/main/README.md
+  webApplication:
+  installation:
+    - pip
+  autoFix: false
+  output:
+    - plain
+implementation:
+  languages:
+    - python
+  ruleImplementation:
+    - python

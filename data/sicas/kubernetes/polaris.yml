@@ -1,0 +1,47 @@
+name: polaris
+toolSupport:
+  - kubernetes
+  - helm
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+  vc:
+repository:
+  url: https://github.com/FairwindsOps/polaris
+  stars: 2670
+  contributors: 51
+  license: Apache-2.0
+  backers: fairwinds
+release:
+  firstRelease:
+  lastRelease: 22.08.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://polaris.docs.fairwinds.com/infrastructure-as-code/
+  webApplication:
+  installation:
+    - binary
+    - brew
+  autoFix: true
+  output:
+    - pretty
+    - json
+implementation:
+  languages:
+    - go
+  ruleImplementation:
+    - yaml

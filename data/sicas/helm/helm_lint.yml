@@ -1,0 +1,41 @@
+name: helm lint
+toolSupport:
+  - helm
+fileSupport:
+builtIn: true
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url:
+  stars:
+  contributors:
+  license:
+  backers:
+release:
+  firstRelease:
+  lastRelease:
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://helm.sh/docs/helm/helm_lint/
+  webApplication:
+  installation:
+    - built-in
+  autoFix: false
+  output:
+    - plain
+implementation:
+  languages:
+  ruleImplementation:

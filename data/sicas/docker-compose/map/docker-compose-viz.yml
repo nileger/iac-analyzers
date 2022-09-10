@@ -1,0 +1,45 @@
+name: docker-compose-viz
+toolSupport:
+  - docker-compose
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - resource visualization
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/pmsipilot/docker-compose-viz
+  stars: 635
+  contributors: 6
+  license: MIT
+  backers: groupe psih
+release:
+  firstRelease: 02.06.2017
+  lastRelease: 12.07.2017
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://github.com/pmsipilot/docker-compose-viz/blob/master/README.md
+  webApplication:
+  installation:
+    - brew
+    - apt-get
+    - docker
+  autoFix:
+  output:
+    - png
+    - dot
+implementation:
+  languages:
+    - php
+  ruleImplementation:

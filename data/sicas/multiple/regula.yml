@@ -1,0 +1,56 @@
+name: regula
+toolSupport:
+  - terraform
+  - cloudformation
+  - kubernetes
+  - arm
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+  - compliance
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+    - travis ci
+    - bitbucket pipelines
+    - scalr
+  vc:
+    - pre-commit hook
+repository:
+  url: https://github.com/fugue/regula
+  stars: 776
+  contributors: 24
+  license: Apache-2.0
+  backers: fugue
+release:
+  firstRelease: 21.08.2020
+  lastRelease: 17.08.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://regula.dev/
+  webApplication:
+  installation:
+    - binary
+    - brew
+    - docker
+  autoFix:
+  output:
+    - text
+    - json
+implementation:
+  languages:
+    - opa
+    - go
+  ruleImplementation:
+    - rego

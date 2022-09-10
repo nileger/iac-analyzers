@@ -1,0 +1,43 @@
+name: terratest
+toolSupport:
+  - terraform
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - policy
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/gruntwork-io/terratest
+  stars: 6328
+  contributors: 198
+  license: Apache-2.0
+  backers: gruntwork
+release:
+  firstRelease: 13.06.2016
+  lastRelease: 08.09.2022
+rules:
+  builtInChecks: false
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: https://terratest.gruntwork.io/docs/
+    link: a
+  webApplication:
+  installation:
+    - go
+  autoFix: false
+  output:
+    - text
+implementation:
+  languages:
+    - go
+  ruleImplementation:
+    - rego

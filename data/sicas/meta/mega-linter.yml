@@ -1,0 +1,80 @@
+name: mega-linter
+toolSupport:
+  - ansible
+  - arm
+  - cloudformation
+  - dockerfile
+  - kubernetes
+  - puppet
+  - terraform
+fileSupport:
+  - json
+  - yaml
+builtIn: false
+includedTools:
+  - prettier
+  - yamllint
+  - v8r
+  - jsonlint
+  - eslint-plugin-jsonc
+  - ansible-lint
+  - arm-ttk
+  - cfn-lint
+  - hadolint
+  - kubeval
+  - kubeconform
+  - puppet-lint
+  - tflint
+  - terrascan
+  - terragrunt
+  - terraform-fmt
+  - checkov
+  - kics
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+    - azure pipelines
+    - jenkins
+    - gitlab ci
+    - concourse
+  vc:
+repository:
+  url: https://github.com/oxsecurity/megalinter
+  stars: 833
+  contributors: 59
+  license: AGPL-3.0
+  backers: oxsecurity
+release:
+  firstRelease: 17.10.2020
+  lastRelease: 04.09.2022
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://oxsecurity.github.io/megalinter/latest/
+  webApplication:
+  installation:
+    - docker
+    - npm
+  autoFix:
+  output:
+    - text
+    - github
+    - gitlab
+    - json
+    - email
+    - tap
+    - console
+implementation:
+  languages:
+    - python
+  ruleImplementation:

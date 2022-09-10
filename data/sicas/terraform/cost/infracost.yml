@@ -1,0 +1,62 @@
+name: infracost
+toolSupport:
+  - terraform
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - cost
+developmentSupport:
+  ide:
+    - vs-code
+  ci:
+    - github actions
+    - gitlab ci
+    - atlantis
+    - azure pipelines
+    - jenkins
+    - bitbucket pipelines
+    - circleci
+  vc:
+repository:
+  url: https://github.com/infracost/infracost
+  stars: 7882
+  contributors: 65
+  license: Apache-2.0
+  backers: infracost
+release:
+  firstRelease: 24.06.2020
+  lastRelease: 30.08.2022
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://www.infracost.io/docs/
+  webApplication:
+  installation:
+    - binary
+    - brew
+    - choco
+    - docker
+    - cli
+  autoFix:
+  output:
+    - json
+    - diff
+    - table
+    - html
+    - github-comment
+    - gitlab-comment
+    - azure-repos-comment
+    - bitbucket-comment
+    - slack-message
+implementation:
+  languages:
+    - go
+  ruleImplementation:

@@ -1,0 +1,50 @@
+name: kubeconform
+toolSupport:
+  - kubernetes
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - syntax
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+  vc:
+repository:
+  url: https://github.com/yannh/kubeconform
+  stars: 646
+  contributors: 19
+  license: Apache-2.0
+  backers: community
+release:
+  firstRelease: 07.06.2020
+  lastRelease: 16.07.2022
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://github.com/yannh/kubeconform/blob/master/Readme.md
+  webApplication:
+  installation:
+    - binary
+    - brew
+  autoFix: false
+  output:
+    - json
+    - junit
+    - tap
+    - text
+implementation:
+  languages:
+    - go
+    - html
+    - shell
+  ruleImplementation:
+    - json

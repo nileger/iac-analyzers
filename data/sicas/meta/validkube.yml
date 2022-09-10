@@ -1,0 +1,49 @@
+name: validkube
+toolSupport:
+  - kubernetes
+fileSupport:
+builtIn: false
+includedTools:
+  - kubeval
+  - kubectl-neat
+  - trivy
+  - kubescape
+  - polaris
+categories:
+  - syntax
+  - security
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/komodorio/validkube
+  stars: 369
+  contributors: 9
+  license: Apache-2.0
+  backers: komodor
+release:
+  firstRelease: 27.01.2022
+  lastRelease: 31.05.2022
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality: c
+    link: https://github.com/komodorio/validkube/blob/master/README.md
+  webApplication: https://validkube.com/
+  installation:
+    - must be deployed, no cli
+  autoFix:
+  output:
+    - yaml
+implementation:
+  languages:
+    - typescript
+    - go
+  ruleImplementation:

@@ -1,0 +1,91 @@
+# Rules: https://docs.kics.io/latest/queries/all-queries/
+name: kics
+toolSupport:
+  - terraform
+  - kubernetes
+  - dockerfile
+  - cloudformation
+  - ansible
+  - helm
+  - openapi
+  - aws-cdk
+  - grpc
+  - arm
+  - gdm
+  - sam
+  - docker-compose
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+  - compliance
+  - misconfiguration
+developmentSupport:
+  ide:
+  ci:
+    - azure pipelines
+    - bamboo
+    - bitbucket pipelines
+    - circleci
+    - codefresh
+    - github actions
+    - gitlab ci
+    - jenkins
+    - teamcity
+    - travis
+    - terraform cloud
+    - aws codebuild
+  vc:
+repository:
+  url: https://github.com/Checkmarx/kics
+  stars: 1187
+  contributors: 87
+  license: Apache-2.0
+  backers: checkmarx
+release:
+  firstRelease: 30.11.2020
+  lastRelease: 31.08.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: false
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: a
+    link: https://docs.kics.io/latest/
+  webApplication:
+  installation:
+    - docker
+    - brew
+  autoFix: false
+  output:
+    - json
+    - sarif
+    - gitlab-sast
+    - junit
+    - sonarqube
+    - html
+    - pdf
+    - cyclonedx
+    - asff
+    - csv
+    - codeclimate
+    - cli
+implementation:
+  languages:
+    - opa
+    - go
+    - hcl
+  ruleImplementation:
+    - rego

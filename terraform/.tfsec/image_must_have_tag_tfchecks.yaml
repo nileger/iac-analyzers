@@ -1,0 +1,28 @@
+checks:
+- code: CUS001
+  description: Check if the docker image referred in an app has a tag specified
+  impact: By not having a tag, the latest tag will be taken by default which may cause accidentally using a wrong version
+  resolution: Add the image tag
+  requiredTypes:
+  - resource
+  requiredLabels:
+  - digitalocean_app
+  severity: ERROR
+  matchSpec:
+    name: spec
+    action: isPresent
+    value: spec
+    subMatch:
+      name: service
+      action: isPresent
+      value: service
+      subMatch:
+        name: image
+        action: isPresent
+        value: image
+        subMatch:
+          name: tag
+          action: isPresent
+  errorMessage: The required image tag was missing
+  relatedLinks:
+  - https://stevelasker.blog/2018/03/01/docker-tagging-best-practices-for-tagging-and-versioning-docker-images/

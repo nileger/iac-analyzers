@@ -1,0 +1,67 @@
+name: cookstyle
+toolSupport:
+  - chef
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+    - vs-code
+  ci:
+  vc:
+repository:
+  url: https://github.com/chef/cookstyle
+  stars: 103
+  contributors: 34
+  license: Apache-2.0
+  backers: chef
+release:
+  firstRelease: 19.04.2016
+  lastRelease: 20.03.2020
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: false
+  whitelistChecks: true
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    link: https://docs.chef.io/workstation/cookstyle/
+    quality: C
+  webApplication:
+  installation:
+    - gem
+  autoFix: true
+  output:
+    - progress
+    - auto gen
+    - clang style
+    - fuubar style
+    - pacman style
+    - emacs
+    - simple
+    - quiet
+    - file list
+    - json
+    - junit
+    - offense count
+    - worst offenders
+    - html
+    - md
+    - tap
+    - github action
+implementation:
+  languages:
+    - ruby
+  ruleImplementation:
+  - ruby

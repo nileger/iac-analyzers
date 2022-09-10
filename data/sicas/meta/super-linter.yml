@@ -1,0 +1,63 @@
+name: super-linter
+toolSupport:
+  - ansible
+  - arm
+  - cloudformation
+  - dockerfile
+  - kubernetes
+  - terraform
+fileSupport:
+  - json
+  - yaml
+builtIn: false
+includedTools:
+  - ansible-lint
+  - arm-ttk
+  - cfn-lint
+  - hadolint
+  - eslint-plugin-json
+  - kubeval
+  - tflint
+  - terrascan
+  - terragrunt
+  - yamllint
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+    - gitlab ci
+    - azure pipelines
+  vc:
+repository:
+  url: https://github.com/github/super-linter
+  stars: 8182
+  contributors: 190
+  license: MIT
+  backers: github
+release:
+  firstRelease: 14.05.2020
+  lastRelease: 25.07.2022
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://github.com/github/super-linter/wiki
+  webApplication:
+  installation:
+    - docker
+  autoFix: false
+  output:
+    - plain
+implementation:
+  languages:
+    - shell
+    - python
+  ruleImplementation:

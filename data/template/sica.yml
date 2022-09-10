@@ -1,0 +1,44 @@
+name: 
+toolSupport:
+  -
+fileSupport:
+  -
+builtIn:
+includedTools:
+  - 
+categories:
+  -
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url:
+  stars:
+  contributors:
+  license:
+  backers:
+release:
+  firstRelease:
+  lastRelease:
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+performance:
+usage:
+  documentation:
+    quality:
+    link:
+  webApplication:
+  installation:
+    - 
+  autoFix:
+  output:
+    - 
+implementation:
+  languages:
+    -
+  ruleImplementation:

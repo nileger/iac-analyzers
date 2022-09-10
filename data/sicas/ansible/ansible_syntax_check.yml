@@ -1,0 +1,40 @@
+name: ansible --syntax-check
+toolSupport:
+  - ansible
+fileSupport:
+builtIn: true
+includedTools:
+categories:
+  - syntax
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url:
+  stars:
+  contributors:
+  license:
+  backers:
+release:
+  firstRelease:
+  lastRelease:
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality: 
+    link: https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+  webApplication:
+  installation:
+    - built-in
+  autoFix:
+  output:
+implementation:
+  languages:
+  ruleImplementation:

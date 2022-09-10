@@ -1,0 +1,41 @@
+name: puppet parser validate
+toolSupport:
+  - puppet
+fileSupport:
+builtIn: true
+includedTools:
+categories:
+  - syntax
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url:
+  stars:
+  contributors:
+  license:
+  backers:
+release:
+  firstRelease:
+  lastRelease:
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://puppet.com/docs/puppet/7/man/parser.html
+  webApplication:
+  installation:
+    - built-in
+  autoFix: false
+  output:
+    - text
+implementation:
+  languages:
+  ruleImplementation:

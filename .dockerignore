@@ -1,0 +1,11 @@
+# General
+CITATION.cff
+CONTRIBUTING.md
+LICENSE
+README.md
+
+# Frontend
+./frontend/node_modules
+
+# terraform
+./terraform/

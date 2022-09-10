@@ -1,0 +1,71 @@
+name: terrascan
+toolSupport:
+  - terraform
+  - cloudformation
+  - kubernetes
+  - helm
+  - kustomize
+  - dockerfile
+  - arm
+  - gcp
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+developmentSupport:
+  ide:
+    - vs-code
+  ci:
+    - argo cd
+    - atlantis pr automation
+    - github actions
+    - gitlab ci
+  vc:
+repository:
+  url: https://github.com/tenable/terrascan
+  stars: 3261
+  contributors: 76
+  license: Apache-2.0
+  backers: tenable
+release:
+  firstRelease: 28.07.2017
+  lastRelease: 13.06.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: a
+    link: https://runterrascan.io/docs/
+  webApplication:
+  installation:
+    - docker
+    - binary
+  autoFix: false
+  output:
+    - human
+    - yaml
+    - json
+    - xml
+    - junit-xml
+    - sarif
+    - github-sarif
+implementation:
+  languages:
+    - go
+    - opa
+  ruleImplementation:
+    - json
+    - rego

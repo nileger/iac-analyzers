@@ -1,0 +1,46 @@
+name: shisho
+toolSupport:
+  - terraform
+  - dockerfile
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+  vc:
+repository:
+  url: https://github.com/flatt-security/shisho
+  stars: 338
+  contributors: 4
+  license: AGPL-3.0
+  backers: flatt security
+release:
+  firstRelease: 18.08.2021
+  lastRelease: 13.10.2021
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://docs.shisho.dev/
+  webApplication: https://play.shisho.dev/
+  installation:
+    - docker
+    - binary
+  autoFix: true
+  output:
+    - plain
+implementation:
+  languages:
+    - rust
+  ruleImplementation:
+    - yaml

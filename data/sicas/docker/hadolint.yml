@@ -1,0 +1,77 @@
+name: hadolint
+toolSupport:
+  - dockerfile
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+  - linting
+developmentSupport:
+  ide:
+    - atom
+    - sublime
+    - vim
+    - neovim
+    - emacs
+    - vs-code
+    - geany
+  ci:
+    - travis ci
+    - github actions
+    - gitlab ci
+    - drone ci
+    - circleci
+    - jenkins
+    - bitbucket
+  vc:
+    - pre-commit hook
+repository:
+  url: https://github.com/hadolint/hadolint
+  stars: 7443
+  contributors: 106
+  license: GPL-3.0
+  backers: community
+release:
+  firstRelease: 03.04.2016
+  lastRelease: 31.03.2022
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: false
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: B
+    link: https://github.com/hadolint/hadolint/tree/master/docs
+  webApplication: https://hadolint.github.io/hadolint/
+  installation:
+    - binary
+    - brew
+    - scoop
+    - docker
+  autoFix: false
+  output:
+    - tty
+    - json
+    - checkstyle
+    - codeclimate
+    - gitlab_codeclimate
+    - gnu
+    - codacy
+    - sonarqube
+    - sarif
+implementation:
+  languages:
+    - haskell
+  ruleImplementation:
+    - haskell

@@ -1,0 +1,46 @@
+name: opa
+toolSupport:
+fileSupport:
+  - json
+builtIn: false
+includedTools:
+categories:
+  - policy
+developmentSupport:
+  ide:
+    - vs-code
+  ci:
+  vc:
+repository:
+  url: https://github.com/open-policy-agent/opa
+  stars: 7078
+  contributors: 327
+  license: Apache-2.0
+  backers: open policy agent
+release:
+  firstRelease: 14.07.2016
+  lastRelease: 08.09.2022
+rules:
+  builtInChecks: false
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://www.openpolicyagent.org/
+  webApplication: https://play.openpolicyagent.org/
+  installation:
+    - binary
+  autoFix: false
+  output:
+    - pretty
+    - json
+implementation:
+  languages:
+    - go
+    - c
+  ruleImplementation:
+    - rego

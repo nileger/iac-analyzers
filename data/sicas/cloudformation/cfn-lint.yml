@@ -1,0 +1,56 @@
+name: cfn-lint
+toolSupport:
+  - cloudformation
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+    - atom
+    - emacs
+    - neovim
+    - sublime
+    - vs-code
+    - jetbrains
+  ci:
+  vc:
+repository:
+  url: https://github.com/aws-cloudformation/cfn-lint
+  stars: 1969
+  contributors: 140
+  license: MIT
+  backers: aws
+release:
+  firstRelease: 17.04.2018
+  lastRelease: 06.09.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: false
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: A
+    link: https://github.com/aws-cloudformation/cfn-lint/tree/main/docs
+  webApplication:
+  installation:
+    - pip
+    - brew
+    - docker
+  autoFix: false
+  output:
+    - quiet
+    - parseable
+    - json
+    - junit
+    - pretty
+    - sarif
+implementation:
+  languages:
+    - python
+  ruleImplementation:
+    - python

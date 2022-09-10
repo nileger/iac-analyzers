@@ -1,0 +1,51 @@
+name: kube-score
+toolSupport:
+  - kubernetes
+  - helm
+  - kustomize
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/zegl/kube-score
+  stars: 1885
+  contributors: 34
+  license: MIT
+  backers: community
+release:
+  firstRelease: 26.09.2018
+  lastRelease: 17.02.2022
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: b
+    link: https://github.com/zegl/kube-score/blob/master/README.md
+  webApplication: https://kube-score.com/
+  installation:
+    - binary
+    - docker
+    - brew
+    - krew  
+  autoFix:
+  output:
+    - human
+    - json
+    - ci
+    - sarif
+implementation:
+  languages:
+    - go
+  ruleImplementation:
+    - go

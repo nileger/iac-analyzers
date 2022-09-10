@@ -1,0 +1,86 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Static IaC Analysis – Bridging the Gap between
+  Research and Practice
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nils
+    family-names: Leger
+repository-code: 'https://github.com/nileger/iac-analyzers'
+url: 'https://iac-analyzers.dev/'
+repository-artifact: 'https://hub.docker.com/r/nileger/iac-analyzers'
+abstract: >-
+  Context: Infrastructure as code is one of the main
+  pillars in DevOps adopted by many companies. Since
+  each infrastructure as code (IaC) tool has its own
+  domain-specific language (DSL), practitioners must
+  learn the IaC tool-specific DSL. This poses the
+  threat of misconfiguration and security flaws.
+  Unit, integration, and end-to-end testing for
+  infrastructure code are more challenging than for
+  application code. Thus, static code analysis plays
+  an essential role in IaC quality assurance.
+
+  Objective: Researchers investigated defects in IaC
+  scripts in various research studies. The findings
+  of these studies, however, only benefit
+  practitioners if they are incorporated into static
+  infrastructure code analyzers (SICAs). No prior
+  work has studied the state-of-the-art static
+  infrastructure code analyzers from both a practical
+  and academic perspective. This work bridges the gap
+  between research and the various static code
+  analyzers developed by practitioners. Furthermore,
+  it provides decision support for practitioners and
+  researchers.
+
+  Methodology: Because no prior work has been done in
+  the field of static infrastructure code analysis in
+  formal literature considering informal literature,
+  too, existing static infrastructure code analyzers
+  are identified using a multivocal literature review
+  (MLR). MLRs are often used to investigate the state
+  of practice. The identified tools are assessed via
+  qualitative analysis. The decision support is
+  developed via design science research.
+
+  Results: Practitioners and researchers have
+  developed various static infrastructure code
+  analysis tools. Since each IaC tool has its own
+  DSL, static analyzers must be adapted to each IaC
+  tool. While many static analysis tools exist for
+  popular IaC tools like Ansible and Terraform,
+  development for other IaC tools and categories like
+  resource visualization remains a gap.
+
+  Conclusion: The main contribution of this work is
+  the application of the multivocal literature review
+  methodology, which allows the inclusion of grey
+  literature, thereby identifying a large number of
+  static infrastructure code analyzers which have
+  been ignored in formal literature so far.
+  Researchers may use the result of this work to
+  focus their research on yet understudied research
+  areas. Furthermore, they may use existing static
+  code analyzers to incorporate their findings into
+  those tools instead of reinventing the wheel. If
+  they decide to create a new SICA, researchers may
+  refer to other SICAs to learn about implementation
+  approaches. Practitioners can use the IaC Analyzer
+  Decision Guide to decide on tools supporting the
+  quality assurance of their infrastructure code.
+keywords:
+  - Infrastructure as Code
+  - IaC tools
+  - static code analysis
+  - infrastructure code analysis tools
+  - multivocal literature review
+  - design science research
+license: Apache-2.0
+date-released: '2022-10-07'

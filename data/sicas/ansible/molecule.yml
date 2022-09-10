@@ -1,0 +1,49 @@
+# Only includes ansible-lint -> same settings as for ansible lint
+name: molecule
+toolSupport:
+  - ansible
+fileSupport:
+builtIn: false
+includedTools:
+  - ansible-lint
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+    - gitlab ci
+    - travis ci
+    - azure pipelines
+    - jenkins
+    - tox
+  vc:
+repository:
+  url: https://github.com/ansible-community/molecule
+  stars: 3418
+  contributors: 274
+  license: MIT
+  backers: community
+release:
+  firstRelease: 12.04.2019
+  lastRelease: 20.07.2022
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality:
+    link: https://molecule.readthedocs.io/en/latest/
+  webApplication:
+  installation:
+    - pip
+    - docker
+  autoFix:
+  output:
+implementation:
+  languages:
+  ruleImplementation:

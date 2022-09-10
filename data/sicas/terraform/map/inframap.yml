@@ -1,0 +1,46 @@
+name: inframap
+toolSupport:
+  - terraform
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - resource visualization
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/cycloidio/inframap
+  stars: 1009
+  contributors: 5
+  license: MIT
+  backers: cycloid
+release:
+  firstRelease:
+  lastRelease:
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: b
+    link: https://github.com/cycloidio/inframap/blob/master/README.md
+  webApplication:
+  installation:
+    - binary
+    - docker
+    - aur
+    - brew
+  autoFix:
+  output:
+    - graph-easy
+    - png
+implementation:
+  languages:
+    - go
+  ruleImplementation:

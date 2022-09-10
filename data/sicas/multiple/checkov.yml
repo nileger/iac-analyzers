@@ -1,0 +1,80 @@
+name: checkov
+toolSupport:
+  - terraform
+  - cloudformation
+  - kubernetes
+  - helm
+  - kustomize
+  - dockerfile
+  - serverless
+  - bicep
+  - openapi
+  - arm
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+  - compliance
+  - secret-scanning
+developmentSupport:
+  ide:
+    - vs-code
+    - jetbrains
+  ci:
+    - jenkins
+    - bitbucket cloud pipelines
+    - github actions
+    - gitlab ci
+    - kubernetes
+    - docker
+    - terraform cloud
+  vc:
+repository:
+  url: https://github.com/bridgecrewio/checkov
+  stars: 4624
+  contributors: 259
+  license: Apache-2.0
+  backers: bridgecrew
+release:
+  firstRelease: 02.12.2019
+  lastRelease: 08.09.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: a
+    link: https://www.checkov.io/1.Welcome/Quick%20Start.html
+  webApplication:
+  installation:
+    - pip
+    - brew
+    - docker
+    - apt
+  autoFix: false
+  output:
+    - cli
+    - cyclonedx
+    - json
+    - junit-xml
+    - sarif
+    - github markdown
+implementation:
+  languages:
+    - python
+    - hcl
+  ruleImplementation:
+    - yaml
+    - python

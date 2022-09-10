@@ -1,0 +1,49 @@
+name: validiac
+toolSupport:
+  - terraform
+fileSupport:
+builtIn: false
+includedTools:
+  - tflint
+  - tfsec
+  - infracost
+  - inframap
+categories:
+  - linting
+  - security
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/gofireflyio/validiac
+  stars: 157
+  contributors: 6
+  license: Apache-2.0
+  backers: firefly
+release:
+  firstRelease: 16.03.2022
+  lastRelease: 30.06.2022
+rules:
+  builtInChecks:
+  customChecks:
+  blacklistChecks:
+  ignoreFindings:
+  whitelistChecks:
+experiments:
+usage:
+  documentation:
+    quality: b
+    link: https://github.com/gofireflyio/validiac/blob/main/README.md
+  webApplication: https://validiac.com/
+  installation:
+    - binary
+    - docker
+  autoFix:
+  output:
+    - text
+implementation:
+  languages:
+    - typescript
+    - go
+  ruleImplementation:

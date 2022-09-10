@@ -1,0 +1,43 @@
+name: terraform validate
+toolSupport:
+  - terraform
+fileSupport:
+builtIn: true
+includedTools:
+categories:
+  - syntax
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url:
+  stars:
+  contributors:
+  license:
+  backers:
+release:
+  firstRelease:
+  lastRelease:
+rules:
+  builtInChecks: true
+  customChecks: false
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: false
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://www.terraform.io/cli/commands/validate
+  webApplication:
+  installation:
+    - built-in
+  autoFix:
+  output:
+    - text
+    - json
+implementation:
+  languages:
+    - go
+  ruleImplementation:

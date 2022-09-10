@@ -1,0 +1,65 @@
+name: conftest
+toolSupport:
+fileSupport:
+  - cue
+  - cyclonedx
+  - edn
+  - environment
+  - hocon
+  - ignore
+  - ini
+  - json
+  - jsonnet
+  - properties
+  - spdx
+  - toml
+  - vcl
+  - xml
+  - yaml
+builtIn: false
+includedTools:
+categories:
+  - security
+  - policy
+developmentSupport:
+  ide:
+  ci:
+  vc:
+repository:
+  url: https://github.com/open-policy-agent/conftest
+  stars: 2362
+  contributors: 77
+  license: Apache-2.0
+  backers: open-policy-agent
+release:
+  firstRelease: 30.05.2019
+  lastRelease: 02.08.2022
+rules:
+  builtInChecks: false
+  customChecks: true
+  blacklistChecks: false
+  ignoreFindings: false
+  whitelistChecks: true
+experiments:
+usage:
+  documentation:
+    quality: a
+    link: https://www.conftest.dev/
+  webApplication:
+  installation:
+    - brew
+    - scoop
+    - docker
+  autoFix:
+  output:
+    - plain
+    - json
+    - tap
+    - table
+    - junit
+    - github
+implementation:
+  languages:
+    - go
+  ruleImplementation:
+    - rego

@@ -1,0 +1,55 @@
+name: kube-linter
+toolSupport:
+  - kubernetes
+  - helm
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - security
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+  vc:
+    - pre-commit hook
+repository:
+  url: https://github.com/stackrox/kube-linter
+  stars: 2046
+  contributors: 53
+  license: Apache-2.0
+  backers: stackrox
+release:
+  firstRelease: 17.09.2020
+  lastRelease: 06.07.2022
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: a
+    link: https://docs.kubelinter.io/#/
+  webApplication:
+  installation:
+    - brew
+    - docker
+  autoFix: false
+  output:
+    - json
+    - sarif
+implementation:
+  languages:
+    - go
+  ruleImplementation:
+    - yaml

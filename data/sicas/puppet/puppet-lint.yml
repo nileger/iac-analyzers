@@ -1,0 +1,52 @@
+name: puppet-lint
+toolSupport:
+  - puppet
+fileSupport:
+builtIn: false
+includedTools:
+categories:
+  - linting
+developmentSupport:
+  ide:
+  ci:
+    - github actions
+  vc:
+repository:
+  url: https://github.com/puppetlabs/puppet-lint
+  stars: 7
+  contributors: 95
+  license: MIT
+  backers: puppetlabs
+release:
+  firstRelease: 15.08.2011
+  lastRelease: 14.09.2021
+rules:
+  builtInChecks: true
+  customChecks: true
+  blacklistChecks: true
+  ignoreFindings: true
+  whitelistChecks: true
+experiments:
+  - name: Assessment for Master's Thesis
+    executedBy:
+      - Nils Leger
+    dateOfExperiment: 14.08.2022
+    truePositives: 80
+    falsePositives: 20
+    speed: 100
+usage:
+  documentation:
+    quality: b
+    link: http://puppet-lint.com/
+  webApplication:
+  installation:
+    - gem
+  autoFix: true
+  output:
+    - json
+    - sarif
+implementation:
+  languages:
+    - ruby
+  ruleImplementation:
+    - ruby
