@@ -49,7 +49,7 @@ func main() {
 
 	// Run a cron job every night to update the GitHub stats
 	s := gocron.NewScheduler(time.UTC)
-	s.Every(1).Day().At("24:00").Do(UpdateStats)
+	s.Every(1).Day().At("00:00").Do(UpdateStats)
 	s.StartAsync()
 
 	r.Run(":8080") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
