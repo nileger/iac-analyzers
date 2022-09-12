@@ -389,6 +389,7 @@ const DecisiongGuide: React.FC = () => {
                 label={t.name}
                 variant="outlined"
                 onDelete={(e) => removeFilter(t.name, Options.TOOL_SUPPORT)}
+                sx={{ color: "white" }}
               />
             ))}
           {fileSupport
