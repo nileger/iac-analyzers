@@ -43,3 +43,7 @@ ER  -
  type = {Master's thesis}
 }
 ```
+
+# Origin
+Initially, this repository was copied from [komodorio/validkube](https://github.com/komodorio/validkube). <br>
+The colors and basic code structure of [komodorio/validkube](https://github.com/komodorio/validkube) were kept, whereas the layout and functionality were significantly adapted.
