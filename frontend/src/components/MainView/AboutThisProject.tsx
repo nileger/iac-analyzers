@@ -8,6 +8,7 @@ import { LINKEDIN_URL, TWITTER_URL } from "./MainViewHeader";
 import { BrOnlyOnPc } from "./index";
 
 const GITHUB_REPO_IAC_ANALYZER_DECISION_GUIDE = "https://github.com/nileger/iac-analyzers";
+const GITHUB_REPO_VALID_KUBE = "https://github.com/komodorio/validkube"
 
 const Container = styled.div`
   color: white;
@@ -122,7 +123,7 @@ export const AboutThisProjectHeader: React.FC = () => {
         <StyledHeadline>About this project</StyledHeadline>
         <br />
         <div>
-        The IaC Analyzer decision guide helps you to find the best tools for your project!
+        The IaC Analyzer Decision Guide helps you to find the best tools for your project!
         </div>
         <br />
         <div style={{ wordBreak: "break-word" }}>
@@ -134,6 +135,24 @@ export const AboutThisProjectHeader: React.FC = () => {
             open-source
           </CustomLink>{" "}
           site, so please feel free to add more tools or update the capabilities of already included tools.
+        </div>
+        <br />
+        <div>
+            The {" "}
+            <CustomLink
+            href={GITHUB_REPO_IAC_ANALYZER_DECISION_GUIDE}
+            target={GITHUB_REPO_IAC_ANALYZER_DECISION_GUIDE}
+          >
+            repository
+          </CustomLink>{" "}
+          was initially copied from{" "}
+          <CustomLink
+            href={GITHUB_REPO_VALID_KUBE}
+            target={GITHUB_REPO_VALID_KUBE}
+          >
+            ValidKube
+          </CustomLink>.{" "}
+          The colors and basic code structure were kept, whereas the layout and functionality were significantly adapted.
         </div>
         <br />
         <BrOnlyOnPc />
