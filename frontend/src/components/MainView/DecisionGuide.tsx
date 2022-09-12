@@ -21,6 +21,7 @@ import Divider from "@mui/material/Divider";
 import Popover from "@mui/material/Popover";
 import Button from "@mui/material/Button";
 import InfoIcon from "@mui/icons-material/Info";
+import Grid from "@mui/material/Grid";
 
 OpenAPI.BASE = "./api";
 
@@ -166,8 +167,13 @@ const DecisiongGuide: React.FC = () => {
       case Options.TOOL_SUPPORT: {
         setToolSupport(updateOptionState(toolSupport, event));
         // Uncheck all fileSupport checkboxes when "custom IaC tool" is unselected
-        if(CUSTOM_IAC_TOOL === event.target.name && false === event.target.checked) {
-          setFileSupport(fileSupport.map(f => ({name: f.name, checked: false})))
+        if (
+          CUSTOM_IAC_TOOL === event.target.name &&
+          false === event.target.checked
+        ) {
+          setFileSupport(
+            fileSupport.map((f) => ({ name: f.name, checked: false }))
+          );
         }
         break;
       }
@@ -348,22 +354,39 @@ const DecisiongGuide: React.FC = () => {
           </Popover>
         </div>
         <>
-          {createFormControl("Tool Support", Options.TOOL_SUPPORT, toolSupport)}
-          {toolSupport?.find((t) => CUSTOM_IAC_TOOL === t.name)?.checked ? (
-            createFormControl("File Support", Options.FILE_SUPPORT, fileSupport)
-          ) : (
-            <></>
-          )}
-          {createFormControl("Rules", Options.RULES, rules)}
-          {rules?.find((o) => "customChecks" === o.name)?.checked ? (
-            createFormControl(
-              "Rule Implementation",
-              Options.RULE_IMPLEMENTATION,
-              ruleImplementation
-            )
-          ) : (
-            <></>
-          )}
+          <Grid container>
+            <Grid container item sm={12} lg={12}>
+              <Grid container item sm={12} lg={6}>
+                {createFormControl(
+                  "Tool Support",
+                  Options.TOOL_SUPPORT,
+                  toolSupport
+                )}
+                {createFormControl("Rules", Options.RULES, rules)}
+              </Grid>
+              <Grid container item sm={12} lg={6}>
+                {toolSupport?.find((t) => CUSTOM_IAC_TOOL === t.name)
+                  ?.checked ? (
+                  createFormControl(
+                    "File Support",
+                    Options.FILE_SUPPORT,
+                    fileSupport
+                  )
+                ) : (
+                  <></>
+                )}
+                {rules?.find((o) => "customChecks" === o.name)?.checked ? (
+                  createFormControl(
+                    "Rule Implementation",
+                    Options.RULE_IMPLEMENTATION,
+                    ruleImplementation
+                  )
+                ) : (
+                  <></>
+                )}
+              </Grid>
+            </Grid>
+          </Grid>
         </>
       </Box>
       <Box
