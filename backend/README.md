@@ -15,5 +15,5 @@
 - [Replace a line in text file Golang](https://stackoverflow.com/questions/26152901/replace-a-line-in-text-file-golang)
 - [How to handle errors in Gin middleware](https://stackoverflow.com/questions/69948784/how-to-handle-errors-in-gin-middleware)
 - [What is a "bot account" on github?](https://stackoverflow.com/questions/29177623/what-is-a-bot-account-on-github)
-- [https://www.airplane.dev/blog/creating-golang-cron-jobs](Creating Golang cron jobs)
-- [https://stackoverflow.com/questions/40326540/how-to-assign-default-value-if-env-var-is-empty](How to assign default value if env var is empty?)
+- [Creating Golang cron jobs](https://www.airplane.dev/blog/creating-golang-cron-jobs)
+- [How to assign default value if env var is empty?](https://stackoverflow.com/questions/40326540/how-to-assign-default-value-if-env-var-is-empty)
