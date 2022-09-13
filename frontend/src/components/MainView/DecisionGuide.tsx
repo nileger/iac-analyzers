@@ -28,6 +28,7 @@ OpenAPI.BASE = "./api";
 var hasSearched = false;
 var isInitialStateChange = true;
 const CUSTOM_IAC_TOOL = "custom IaC tool";
+const CUSTOM_CHECKS = "customChecks";
 
 /**
  * Data structure for the representation of the state of a checkbox
@@ -183,6 +184,14 @@ const DecisiongGuide: React.FC = () => {
       }
       case Options.RULES: {
         setRules(updateOptionState(rules, event));
+        if(
+          CUSTOM_CHECKS === event.target.name &&
+          false === event.target.checked
+        ) {
+          setRuleImplementation(
+            ruleImplementation.map((r) => ({ name: r.name, checked: false }))
+          );
+        }
         break;
       }
       case Options.RULE_IMPLEMENTATION: {
@@ -256,6 +265,11 @@ const DecisiongGuide: React.FC = () => {
     switch (path) {
       case Options.TOOL_SUPPORT: {
         setToolSupport(updateOptionStateWithValue(toolSupport, name, false));
+        if (CUSTOM_IAC_TOOL === name) {
+          setFileSupport(
+            fileSupport.map((f) => ({ name: f.name, checked: false }))
+          );
+        }
         break;
       }
       case Options.FILE_SUPPORT: {
@@ -264,6 +278,11 @@ const DecisiongGuide: React.FC = () => {
       }
       case Options.RULES: {
         setRules(updateOptionStateWithValue(rules, name, false));
+        if (CUSTOM_CHECKS === name) {
+          setRuleImplementation(
+            ruleImplementation.map((r) => ({ name: r.name, checked: false }))
+          );
+        }
         break;
       }
       case Options.RULE_IMPLEMENTATION: {
