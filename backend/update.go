@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"github.com/go-git/go-git/v5"
+	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
 	gohttp "github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/google/go-github/github"
@@ -57,9 +58,10 @@ func UpdateStats() {
 	Clone the repository and get the worktree
 	*/
 	r, err := git.PlainClone(clonePath, false, &git.CloneOptions{
-		Auth:     auth,
-		URL:      gitHubRepository,
-		Progress: os.Stdout,
+		Auth:          auth,
+		URL:           gitHubRepository,
+		ReferenceName: plumbing.NewBranchReferenceName("update-github-stats"),
+		Progress:      os.Stdout,
 	})
 	if err != nil {
 		log.Print("Could not clone repository.")
@@ -68,6 +70,15 @@ func UpdateStats() {
 	w, err := r.Worktree()
 	if err != nil {
 		log.Print("Could not retrieve worktree.")
+		return
+	}
+
+	/**
+	Backmerge main into current branch
+	*/
+	err = w.Pull(&git.PullOptions{RemoteName: "origin", ReferenceName: plumbing.NewBranchReferenceName("main")})
+	if err != nil && err.Error() != "already up-to-date" {
+		log.Print("Could not backmerge main.")
 		return
 	}
 
