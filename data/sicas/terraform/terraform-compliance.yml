@@ -42,6 +42,5 @@ implementation:
   languages:
     - python
     - hcl
-    - gherkin
   ruleImplementation:
-    - bdd
+    - gherkin
