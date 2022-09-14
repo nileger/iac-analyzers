@@ -39,7 +39,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/Checkmarx/kics
-  stars: 1187
+  stars: 1195
   contributors: 87
   license: Apache-2.0
   backers: checkmarx
