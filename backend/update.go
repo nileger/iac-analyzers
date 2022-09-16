@@ -76,8 +76,11 @@ func UpdateStats() {
 	/**
 	Backmerge main into current branch
 	*/
-	err = w.Pull(&git.PullOptions{RemoteName: "origin", ReferenceName: plumbing.NewBranchReferenceName("main")})
-	if err != nil && err.Error() != "already up-to-date" {
+	err = w.Pull(&git.PullOptions{
+		RemoteName:    "origin",
+		ReferenceName: plumbing.NewBranchReferenceName("main"),
+	})
+	if err != nil && err.Error() != "already up-to-date" && err.Error() != "non-fast-forward update" {
 		log.Print("Could not backmerge main.")
 		return
 	}
