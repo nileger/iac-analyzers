@@ -26,7 +26,7 @@ repository:
   backers: armo
 release:
   firstRelease: 12.08.2021
-  lastRelease: 05.09.2022
+  lastRelease: 19.09.2022
 rules:
   builtInChecks: true
   customChecks: false
