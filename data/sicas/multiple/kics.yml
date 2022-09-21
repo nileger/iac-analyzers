@@ -39,13 +39,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/Checkmarx/kics
-  stars: 1187
-  contributors: 87
+  stars: 1195
+  contributors: 88
   license: Apache-2.0
   backers: checkmarx
 release:
   firstRelease: 30.11.2020
-  lastRelease: 31.08.2022
+  lastRelease: 14.09.2022
 rules:
   builtInChecks: true
   customChecks: true
