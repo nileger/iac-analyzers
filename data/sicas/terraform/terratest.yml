@@ -35,7 +35,6 @@ usage:
     - go
   autoFix: false
   output:
-    - text
 implementation:
   languages:
     - go
