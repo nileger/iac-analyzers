@@ -37,7 +37,6 @@ usage:
     - docker
   autoFix: false
   output:
-    - text
 implementation:
   languages:
     - python

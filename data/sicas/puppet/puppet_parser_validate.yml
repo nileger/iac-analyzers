@@ -36,6 +36,9 @@ usage:
   autoFix: false
   output:
     - text
+    - json
+    - yaml
+    - console
 implementation:
   languages:
   ruleImplementation:

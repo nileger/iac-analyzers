@@ -184,7 +184,7 @@ const DecisiongGuide: React.FC = () => {
       }
       case Options.RULES: {
         setRules(updateOptionState(rules, event));
-        if(
+        if (
           CUSTOM_CHECKS === event.target.name &&
           false === event.target.checked
         ) {
@@ -509,13 +509,40 @@ const DecisiongGuide: React.FC = () => {
                     expandIcon={<ExpandMoreIcon htmlColor="white" />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
+                    sx={{ ".MuiAccordionSummary-content": { margin: 0 }}}
                   >
                     <Typography sx={{ width: "33%", flexShrink: 0 }}>
                       {sica?.name}
                     </Typography>
                     <Typography>
-                      {sica?.toolSupport?.map((t) => `${t} `)}{" "}
-                      {sica?.fileSupport?.map((f) => `${f} `)}
+                      {sica?.toolSupport?.length ? (
+                        <>
+                          {sica?.toolSupport?.map((t) => (
+                            <Chip
+                              color="primary"
+                              label={t}
+                              variant="filled"
+                              sx={{marginRight: "2px", marginBottom: "2px"}}
+                            />
+                          ))}
+                        </>
+                      ) : (
+                        <></>
+                      )}
+                      {sica?.fileSupport?.length ? (
+                        <>
+                          {sica?.fileSupport?.map((f) => (
+                            <Chip
+                              color="primary"
+                              label={f}
+                              variant="filled"
+                              sx={{marginRight: "2px", marginBottom: "2px"}}
+                            />
+                          ))}
+                        </>
+                      ) : (
+                        <></>
+                      )}
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails

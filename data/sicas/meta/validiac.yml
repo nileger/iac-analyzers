@@ -41,7 +41,6 @@ usage:
     - docker
   autoFix:
   output:
-    - text
 implementation:
   languages:
     - typescript
