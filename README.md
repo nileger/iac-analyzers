@@ -27,7 +27,7 @@ T1  - Static IaC Analysis – Bridging the Gap between Research and Practice
 DA  - 2022
 CY  - Bad Honnef, Germany
 PB  - IU University of Applied Sciences
-A3  - Pieper, Jöran
+A3  - Köhler, André
 M3  - Master's thesis
 M4  - Citavi
 ER  -
