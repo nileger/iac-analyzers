@@ -2,7 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 
-export type main_SICA = {
+export type iac_analyzers_SICA = {
     builtIn?: boolean;
     categories?: Array<string>;
     developmentSupport?: {
@@ -17,6 +17,7 @@ vc?: Array<string>;
 dateOfExperiment?: string;
 executedBy?: Array<string>;
 falsePositives?: number;
+fixRate?: number;
 name?: string;
 speed?: number;
 truePositives?: number;

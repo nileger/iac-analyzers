@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { main_Stats } from '../models/main_Stats';
+import type { iac_analyzers_tmp_iac_analyzers_backend_Stats } from '../models/iac_analyzers_tmp_iac_analyzers_backend_Stats';
 
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -12,10 +12,10 @@ export class StatisticsService {
     /**
      * Returns statistics about the SICAs
      * Returns statistics about the SICAs, e.g., the number of tools that support Terraform
-     * @returns main_Stats Statistics
+     * @returns iac_analyzers_tmp_iac_analyzers_backend_Stats Statistics
      * @throws ApiError
      */
-    public static getSicasStats(): CancelablePromise<main_Stats> {
+    public static getSicasStats(): CancelablePromise<iac_analyzers_tmp_iac_analyzers_backend_Stats> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/sicas/stats',

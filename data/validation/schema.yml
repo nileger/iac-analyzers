@@ -43,3 +43,4 @@ experiment:
   truePositives: any(num(), null())
   falsePositives: any(num(), null())
   speed: any(num(), null())
+  fixRate: any(num(), null())

@@ -56,6 +56,7 @@ type SICA struct {
 		TruePositives    int8     `yaml:"truePositives" json:"truePositives"`
 		FalsePositives   int8     `yaml:"falsePositives" json:"falsePositives"`
 		Speed            int8     `yaml:"speed" json:"speed"`
+		FixRate          int8     `yaml:"fixRate" json:"fixRate"`
 	} `yaml:"experiments" json:"experiments"`
 	Usage struct {
 		Documentation struct {

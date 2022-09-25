@@ -32,9 +32,10 @@ experiments:
     executedBy:
       - Nils Leger
     dateOfExperiment: 14.08.2022
-    truePositives: 80
-    falsePositives: 20
-    speed: 100
+    truePositives: 100
+    falsePositives: 0
+    speed: 3
+    fixRate: 54
 usage:
   documentation:
     link: https://github.com/stelligent/cfn_nag/blob/master/README.md

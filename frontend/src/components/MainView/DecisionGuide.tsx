@@ -12,7 +12,11 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { purpleBackground } from "../../utils/Colors";
-import { main_SICA, OpenAPI, SicasService } from "../../services/openapi";
+import {
+  iac_analyzers_SICA,
+  OpenAPI,
+  SicasService,
+} from "../../services/openapi";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
 import { Chip } from "@mui/material";
@@ -57,7 +61,7 @@ const DecisiongGuide: React.FC = () => {
     []
   );
   /** Result */
-  const [sicas, setSicas] = React.useState<main_SICA[]>([]);
+  const [sicas, setSicas] = React.useState<iac_analyzers_SICA[]>([]);
 
   /** Transform the options into a SICA  */
   const optionStatetoSICA = () => {
@@ -77,7 +81,7 @@ const DecisiongGuide: React.FC = () => {
           ...ruleImplementation.filter((r) => r.checked).map((r) => r.name),
         ],
       },
-    } as main_SICA;
+    } as iac_analyzers_SICA;
   };
 
   /**
@@ -99,7 +103,7 @@ const DecisiongGuide: React.FC = () => {
 
   /** Retrieve supported options */
   React.useEffect(() => {
-    SicasService.getSicasOptions().then((o: main_SICA) => {
+    SicasService.getSicasOptions().then((o: iac_analyzers_SICA) => {
       setToolSupport(
         toOptions([...(o.toolSupport as string[]), CUSTOM_IAC_TOOL])
       );
@@ -116,13 +120,17 @@ const DecisiongGuide: React.FC = () => {
   /** Get SICAs for the specified options */
   const getSICAs = () => {
     setIsLoading(true);
-    SicasService.postSicas(optionStatetoSICA()).then((s: main_SICA[]) => {
-      hasSearched = true;
-      setIsLoading(false);
-      setSicas(
-        s?.sort((a: main_SICA, b: main_SICA) => a.name!.localeCompare(b.name!))
-      );
-    });
+    SicasService.postSicas(optionStatetoSICA()).then(
+      (s: iac_analyzers_SICA[]) => {
+        hasSearched = true;
+        setIsLoading(false);
+        setSicas(
+          s?.sort((a: iac_analyzers_SICA, b: iac_analyzers_SICA) =>
+            a.name!.localeCompare(b.name!)
+          )
+        );
+      }
+    );
   };
 
   /** Update the state of a specific option */
@@ -509,7 +517,7 @@ const DecisiongGuide: React.FC = () => {
                     expandIcon={<ExpandMoreIcon htmlColor="white" />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
-                    sx={{ ".MuiAccordionSummary-content": { margin: 0 }}}
+                    sx={{ ".MuiAccordionSummary-content": { margin: 0 } }}
                   >
                     <Typography sx={{ width: "33%", flexShrink: 0 }}>
                       {sica?.name}
@@ -522,7 +530,7 @@ const DecisiongGuide: React.FC = () => {
                               color="primary"
                               label={t}
                               variant="filled"
-                              sx={{marginRight: "2px", marginBottom: "2px"}}
+                              sx={{ marginRight: "2px", marginBottom: "2px" }}
                             />
                           ))}
                         </>
@@ -536,7 +544,7 @@ const DecisiongGuide: React.FC = () => {
                               color="primary"
                               label={f}
                               variant="filled"
-                              sx={{marginRight: "2px", marginBottom: "2px"}}
+                              sx={{ marginRight: "2px", marginBottom: "2px" }}
                             />
                           ))}
                         </>
@@ -1061,20 +1069,30 @@ const DecisiongGuide: React.FC = () => {
                             )}
                             {e?.truePositives ? (
                               <Typography>
-                                True Positives: {e?.truePositives}
+                                True Positives: {e?.truePositives}%
                               </Typography>
                             ) : (
                               <></>
                             )}
                             {e?.falsePositives ? (
                               <Typography>
-                                False Positives: {e?.falsePositives}
+                                False Positives: {e?.falsePositives}%
                               </Typography>
                             ) : (
                               <></>
                             )}
                             {e?.speed ? (
-                              <Typography>Speed: {e?.speed}</Typography>
+                              <Typography>Speed: {e?.speed}s</Typography>
+                            ) : (
+                              <></>
+                            )}
+                            {e?.fixRate ? (
+                              <>
+                                <Typography>Fix Rate<sup>1</sup>: {e?.fixRate}%</Typography>
+                                <Typography>
+                                  <sup>1</sup> How many findings would the practitioners fix?{" "}
+                                </Typography>
+                              </>
                             ) : (
                               <></>
                             )}

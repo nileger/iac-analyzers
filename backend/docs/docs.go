@@ -176,6 +176,9 @@ const docTemplate = `{
                             "falsePositives": {
                                 "type": "integer"
                             },
+                            "fixRate": {
+                                "type": "integer"
+                            },
                             "name": {
                                 "type": "string"
                             },

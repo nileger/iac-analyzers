@@ -2,7 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 
-export type main_Stats = {
+export type iac_analyzers_tmp_iac_analyzers_backend_Stats = {
     builtInTools?: {
 toolSupport?: Record<string, number>;
 };

@@ -39,6 +39,7 @@ experiments:
     truePositives: 80
     falsePositives: 20
     speed: 100
+    fixRate: 80
 usage:
   documentation:
     quality: a
