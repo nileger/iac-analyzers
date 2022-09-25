@@ -26,13 +26,6 @@ rules:
   ignoreFindings: true
   whitelistChecks: true
 experiments:
-  - name: Assessment for Master's Thesis
-    executedBy:
-      - Nils Leger
-    dateOfExperiment: 14.08.2022
-    truePositives: 80
-    falsePositives: 20
-    speed: 100
 usage:
   documentation:
     quality: b
