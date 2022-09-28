@@ -1090,7 +1090,7 @@ const DecisiongGuide: React.FC = () => {
                               <>
                                 <Typography>Fix Rate<sup>1</sup>: {e?.fixRate}%</Typography>
                                 <Typography>
-                                  <sup>1</sup> How many findings would the practitioners fix?{" "}
+                                  <sup>1</sup> How many findings would the practitioners resolve?{" "}
                                 </Typography>
                               </>
                             ) : (
