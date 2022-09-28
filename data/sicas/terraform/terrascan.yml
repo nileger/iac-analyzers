@@ -42,10 +42,10 @@ experiments:
     executedBy:
       - Nils Leger
     dateOfExperiment: 14.08.2022
-    truePositives: 80
-    falsePositives: 20
-    speed: 100
-    fixRate: 80
+    truePositives: 88
+    falsePositives: 12
+    speed: 9
+    fixRate: 62
 usage:
   documentation:
     quality: a
