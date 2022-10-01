@@ -734,7 +734,7 @@ const DecisiongGuide: React.FC = () => {
                       </li>
                     </ul>
                     <Typography>
-                      * Backers describes the main contributors and supportes of
+                      * The term backers describes the main contributors and supporters of
                       a SICA. This could be a company or the community.
                     </Typography>
 
