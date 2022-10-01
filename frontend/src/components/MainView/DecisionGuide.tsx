@@ -677,7 +677,7 @@ const DecisiongGuide: React.FC = () => {
                         </ul>
                       ) : (
                         <Typography>
-                          The tool's documentation didn't metnion specific VC
+                          The tool's documentation didn't mention specific VC
                           integrations.
                         </Typography>
                       )}
