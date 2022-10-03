@@ -19,13 +19,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/returntocorp/semgrep
-  stars: 7061
-  contributors: 114
+  stars: 7160
+  contributors: 117
   license: GNU2
   backers: r2c
 release:
   firstRelease: 06.02.2020
-  lastRelease: 15.09.2022
+  lastRelease: 27.09.2022
 rules:
   builtInChecks: true
   customChecks: true

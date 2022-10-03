@@ -18,13 +18,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aquasecurity/tfsec
-  stars: 5017
+  stars: 5108
   contributors: 110
   license: MIT
   backers: aquasecurity
 release:
   firstRelease: 05.05.2019
-  lastRelease: 31.08.2022
+  lastRelease: 21.09.2022
 rules:
   builtInChecks: true
   customChecks: true
