@@ -18,8 +18,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/komodorio/validkube
-  stars: 370
-  contributors: 9
+  stars: 386
+  contributors: 10
   license: Apache-2.0
   backers: komodor
 release:
