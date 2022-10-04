@@ -16,7 +16,7 @@ developmentSupport:
 repository:
   url: https://github.com/stackrox/kube-linter
   stars: 2058
-  contributors: 53
+  contributors: 54
   license: Apache-2.0
   backers: stackrox
 release:
