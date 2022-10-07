@@ -28,7 +28,7 @@ developmentSupport:
 repository:
   url: https://github.com/open-policy-agent/conftest
   stars: 2393
-  contributors: 77
+  contributors: 78
   license: Apache-2.0
   backers: open-policy-agent
 release:
