@@ -24,7 +24,7 @@ repository:
   backers: komodor
 release:
   firstRelease: 27.01.2022
-  lastRelease: 31.05.2022
+  lastRelease: 06.10.2022
 rules:
   builtInChecks:
   customChecks:
