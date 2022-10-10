@@ -12,7 +12,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/thegeeklab/ansible-later
-  stars: 68
+  stars: 69
   contributors: 5
   license: MIT
   backers: Geeklab
