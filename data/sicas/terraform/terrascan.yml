@@ -30,7 +30,7 @@ repository:
   backers: tenable
 release:
   firstRelease: 28.07.2017
-  lastRelease: 13.06.2022
+  lastRelease: 19.10.2022
 rules:
   builtInChecks: true
   customChecks: true
