@@ -34,7 +34,7 @@ repository:
   backers: community
 release:
   firstRelease: 03.04.2016
-  lastRelease: 31.03.2022
+  lastRelease: 09.11.2022
 rules:
   builtInChecks: true
   customChecks: false
