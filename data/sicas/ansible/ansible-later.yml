@@ -12,13 +12,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/thegeeklab/ansible-later
-  stars: 68
+  stars: 69
   contributors: 5
   license: MIT
   backers: Geeklab
 release:
   firstRelease: 19.12.2019
-  lastRelease: 20.09.2022
+  lastRelease: 13.10.2022
 rules:
   builtInChecks: true
   customChecks: true

@@ -12,13 +12,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/gruntwork-io/terratest
-  stars: 6332
-  contributors: 198
+  stars: 6381
+  contributors: 199
   license: Apache-2.0
   backers: gruntwork
 release:
   firstRelease: 13.06.2016
-  lastRelease: 08.09.2022
+  lastRelease: 13.10.2022
 rules:
   builtInChecks: false
   customChecks: true

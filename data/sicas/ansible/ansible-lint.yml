@@ -13,13 +13,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/ansible/ansible-lint
-  stars: 2874
-  contributors: 206
+  stars: 2885
+  contributors: 208
   license: GPL-3.0
   backers: community
 release:
   firstRelease: 30.06.2016
-  lastRelease: 18.09.2022
+  lastRelease: 23.09.2022
 rules:
   builtInChecks: true
   customChecks: true

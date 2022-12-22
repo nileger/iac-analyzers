@@ -20,13 +20,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/armosec/kubescape
-  stars: 6869
-  contributors: 76
+  stars: 7007
+  contributors: 78
   license: Apache-2.0
   backers: armo
 release:
   firstRelease: 12.08.2021
-  lastRelease: 19.09.2022
+  lastRelease: 29.09.2022
 rules:
   builtInChecks: true
   customChecks: false
