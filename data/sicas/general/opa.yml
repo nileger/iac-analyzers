@@ -13,13 +13,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/open-policy-agent/opa
-  stars: 7185
-  contributors: 335
+  stars: 7501
+  contributors: 354
   license: Apache-2.0
   backers: open policy agent
 release:
   firstRelease: 14.07.2016
-  lastRelease: 07.10.2022
+  lastRelease: 21.12.2022
 rules:
   builtInChecks: false
   customChecks: true

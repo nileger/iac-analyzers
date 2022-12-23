@@ -14,12 +14,12 @@ developmentSupport:
 repository:
   url: https://github.com/puppetlabs/puppet-lint
   stars: 8
-  contributors: 97
+  contributors: 102
   license: MIT
   backers: puppetlabs
 release:
   firstRelease: 15.08.2011
-  lastRelease: 13.10.2022
+  lastRelease: 20.10.2022
 rules:
   builtInChecks: true
   customChecks: true
