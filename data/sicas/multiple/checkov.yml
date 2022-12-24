@@ -32,7 +32,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/bridgecrewio/checkov
-  stars: 5028
+  stars: 5031
   contributors: 288
   license: Apache-2.0
   backers: bridgecrew

@@ -12,7 +12,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/gruntwork-io/terratest
-  stars: 6565
+  stars: 6566
   contributors: 205
   license: Apache-2.0
   backers: gruntwork
