@@ -49,7 +49,7 @@ repository:
   backers: oxsecurity
 release:
   firstRelease: 17.10.2020
-  lastRelease: 23.11.2022
+  lastRelease: 24.12.2022
 rules:
   builtInChecks:
   customChecks:
