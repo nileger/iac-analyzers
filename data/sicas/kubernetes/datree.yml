@@ -31,7 +31,7 @@ repository:
   backers: datree
 release:
   firstRelease: 14.04.2021
-  lastRelease: 01.12.2022
+  lastRelease: 29.12.2022
 rules:
   builtInChecks: true
   customChecks: true
