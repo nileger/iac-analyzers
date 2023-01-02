@@ -44,7 +44,7 @@ developmentSupport:
 repository:
   url: https://github.com/oxsecurity/megalinter
   stars: 974
-  contributors: 69
+  contributors: 70
   license: AGPL-3.0
   backers: oxsecurity
 release:
