@@ -21,7 +21,7 @@ developmentSupport:
 repository:
   url: https://github.com/infracost/infracost
   stars: 8401
-  contributors: 70
+  contributors: 71
   license: Apache-2.0
   backers: infracost
 release:
