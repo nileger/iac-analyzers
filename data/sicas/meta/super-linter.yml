@@ -38,7 +38,7 @@ repository:
   backers: github
 release:
   firstRelease: 14.05.2020
-  lastRelease: 04.10.2022
+  lastRelease: 04.01.2023
 rules:
   builtInChecks:
   customChecks:
