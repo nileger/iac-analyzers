@@ -25,7 +25,7 @@ repository:
   backers: r2c
 release:
   firstRelease: 06.02.2020
-  lastRelease: 16.12.2022
+  lastRelease: 06.01.2023
 rules:
   builtInChecks: true
   customChecks: true
