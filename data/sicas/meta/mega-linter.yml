@@ -2,36 +2,126 @@ name: mega-linter
 toolSupport:
   - ansible
   - arm
+  - bicep
   - cloudformation
   - dockerfile
+  - helm
   - kubernetes
+  - kustomize
+  - openapi
   - puppet
+  - serverless
   - terraform
 fileSupport:
   - json
   - yaml
 builtIn: false
 includedTools:
-  - prettier
-  - yamllint
-  - v8r
-  - jsonlint
-  - eslint-plugin-jsonc
+  - actionlint
   - ansible-lint
   - arm-ttk
+  - bandit
+  - bash-exec
+  - bicep_linter
+  - black
   - cfn-lint
-  - hadolint
-  - kubeval
-  - kubeconform
-  - puppet-lint
-  - tflint
-  - terrascan
-  - terragrunt
-  - terraform-fmt
+  - checkmake
   - checkov
+  - checkstyle
+  - chktex
+  - clippy
+  - clj-kondo
+  - coffeelint
+  - cpplint
+  - cspell
+  - dartanalyzer
+  - devskim
+  - djlint
+  - dotenv-linter
+  - dotnet-format
+  - dustilock
+  - editorconfig-checker
+  - eslint
+  - eslint-plugin-jsonc
+  - flake8
+  - gherkin-lint
+  - git
+  - gitleaks
+  - golangci-lint
+  - goodcheck
+  - graphql-schema-linter
+  - hadolint
+  - htmlhint
+  - isort
+  - jscpd
+  - jsonlint
   - kics
+  - ktlint
+  - kubeconform
+  - kubeval
+  - lintr
+  - luacheck
+  - markdown-link-check
+  - markdown-table-formatter
+  - markdownlint
+  - misspell
+  - mypy
+  - npm-groovy-lint
+  - npm-package-json-lint
+  - perlcritic
+  - phpcs
+  - phplint
+  - phpstan
+  - pmd
+  - powershell
+  - prettier
+  - proselint
+  - protolint
+  - psalm
+  - puppet-lint
+  - pylint
+  - pyright
+  - raku
+  - remark-lint
+  - revive
+  - rst-lint
+  - rstcheck
+  - rstfmt
+  - rubocop
+  - scalafix
+  - scss-lint
+  - secretlint
+  - semgrep
+  - sfdx-scanner
+  - shellcheck
+  - shfmt
+  - snakefmt
+  - snakemake
+  - spectral
+  - sql-lint
+  - sqlfluff
+  - standard
+  - stylelint
+  - swiftlint
+  - syft
+  - tekton-lint
+  - terraform-fmt
+  - terragrunt
+  - terrascan
+  - tflint
+  - trivy
+  - tsqllint
+  - v8r
+  - xmllint
+  - yamllint
+
 categories:
+  - compliance
   - linting
+  - misconfiguration
+  - secret-scanning
+  - security
+  - syntax
 developmentSupport:
   ide:
   ci:
@@ -51,10 +141,10 @@ release:
   firstRelease: 17.10.2020
   lastRelease: 24.12.2022
 rules:
-  builtInChecks:
-  customChecks:
+  builtInChecks: true
+  customChecks: true
   blacklistChecks:
-  ignoreFindings:
+  ignoreFindings: true
   whitelistChecks:
 experiments:
 usage:
@@ -65,15 +155,17 @@ usage:
   installation:
     - docker
     - npm
-  autoFix:
+  autoFix: true
   output:
     - text
     - github
     - gitlab
+    - azure
     - json
     - email
     - tap
     - console
+    - sarif
 implementation:
   languages:
     - python
