@@ -17,7 +17,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/gofireflyio/validiac
-  stars: 164
+  stars: 165
   contributors: 7
   license: Apache-2.0
   backers: firefly
