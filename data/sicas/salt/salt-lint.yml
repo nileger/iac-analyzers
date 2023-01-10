@@ -17,7 +17,7 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/warpnet/salt-lint
-  stars: 126
+  stars: 127
   contributors: 25
   license: MIT
   backers: warpnet
