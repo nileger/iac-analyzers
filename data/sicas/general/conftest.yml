@@ -33,7 +33,7 @@ repository:
   backers: open-policy-agent
 release:
   firstRelease: 30.05.2019
-  lastRelease: 20.12.2022
+  lastRelease: 10.01.2023
 rules:
   builtInChecks: false
   customChecks: true
