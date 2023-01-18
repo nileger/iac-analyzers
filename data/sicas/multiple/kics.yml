@@ -45,7 +45,7 @@ repository:
   backers: checkmarx
 release:
   firstRelease: 30.11.2020
-  lastRelease: 03.01.2023
+  lastRelease: 17.01.2023
 rules:
   builtInChecks: true
   customChecks: true
