@@ -21,7 +21,7 @@ repository:
   backers: stackrox
 release:
   firstRelease: 17.09.2020
-  lastRelease: 06.12.2022
+  lastRelease: 19.01.2023
 rules:
   builtInChecks: true
   customChecks: true
