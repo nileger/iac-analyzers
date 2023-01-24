@@ -22,7 +22,7 @@ developmentSupport:
 repository:
   url: https://github.com/fugue/regula
   stars: 806
-  contributors: 24
+  contributors: 26
   license: Apache-2.0
   backers: fugue
 release:
