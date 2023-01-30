@@ -32,13 +32,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/bridgecrewio/checkov
-  stars: 5031
-  contributors: 289
+  stars: 5081
+  contributors: 290
   license: Apache-2.0
   backers: bridgecrew
 release:
   firstRelease: 02.12.2019
-  lastRelease: 25.12.2022
+  lastRelease: 09.01.2023
 rules:
   builtInChecks: true
   customChecks: true
