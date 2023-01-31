@@ -18,13 +18,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aws-cloudformation/cfn-lint
-  stars: 2074
+  stars: 2094
   contributors: 150
   license: MIT
   backers: aws
 release:
   firstRelease: 17.04.2018
-  lastRelease: 09.01.2023
+  lastRelease: 27.01.2023
 rules:
   builtInChecks: true
   customChecks: true

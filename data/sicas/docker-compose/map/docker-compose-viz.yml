@@ -12,7 +12,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/pmsipilot/docker-compose-viz
-  stars: 702
+  stars: 705
   contributors: 6
   license: MIT
   backers: groupe psih
