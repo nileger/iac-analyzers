@@ -19,7 +19,7 @@ repository:
   backers: open policy agent
 release:
   firstRelease: 14.07.2016
-  lastRelease: 09.01.2023
+  lastRelease: 07.02.2023
 rules:
   builtInChecks: false
   customChecks: true
