@@ -20,7 +20,7 @@ repository:
   backers: fairwinds
 release:
   firstRelease:
-  lastRelease: 05.01.2023
+  lastRelease: 09.02.2023
 rules:
   builtInChecks: true
   customChecks: true

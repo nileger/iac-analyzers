@@ -18,7 +18,7 @@ developmentSupport:
 repository:
   url: https://github.com/warpnet/salt-lint
   stars: 131
-  contributors: 25
+  contributors: 26
   license: MIT
   backers: warpnet
 release:
