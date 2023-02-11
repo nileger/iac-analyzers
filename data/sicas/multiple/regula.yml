@@ -27,7 +27,7 @@ repository:
   backers: fugue
 release:
   firstRelease: 21.08.2020
-  lastRelease: 24.01.2023
+  lastRelease: 10.02.2023
 rules:
   builtInChecks: true
   customChecks: true
