@@ -14,7 +14,7 @@ developmentSupport:
 repository:
   url: https://github.com/puppetlabs/puppet-lint
   stars: 9
-  contributors: 102
+  contributors: 103
   license: MIT
   backers: puppetlabs
 release:
