@@ -17,13 +17,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/prancer-io/cloud-validation-framework
-  stars: 118
-  contributors: 31
+  stars: 119
+  contributors: 32
   license: MPL-2.0
   backers: prancer
 release:
   firstRelease: 15.02.2019
-  lastRelease: 08.12.2022
+  lastRelease: 31.01.2023
 rules:
   builtInChecks: true
   customChecks: true
