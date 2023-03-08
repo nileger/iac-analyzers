@@ -14,8 +14,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/FairwindsOps/polaris
-  stars: 2805
-  contributors: 56
+  stars: 2833
+  contributors: 57
   license: Apache-2.0
   backers: fairwinds
 release:

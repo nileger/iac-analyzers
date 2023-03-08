@@ -13,7 +13,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/terraform-compliance/cli
-  stars: 1227
+  stars: 1235
   contributors: 43
   license: MIT
   backers: community

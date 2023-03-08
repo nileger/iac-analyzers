@@ -21,13 +21,13 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/fugue/regula
-  stars: 819
-  contributors: 27
+  stars: 830
+  contributors: 28
   license: Apache-2.0
   backers: fugue
 release:
   firstRelease: 21.08.2020
-  lastRelease: 10.02.2023
+  lastRelease: 16.02.2023
 rules:
   builtInChecks: true
   customChecks: true
