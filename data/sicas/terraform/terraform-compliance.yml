@@ -13,13 +13,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/terraform-compliance/cli
-  stars: 1227
-  contributors: 43
+  stars: 1235
+  contributors: 44
   license: MIT
   backers: community
 release:
   firstRelease: 19.06.2018
-  lastRelease: 16.01.2023
+  lastRelease: 14.03.2023
 rules:
   builtInChecks: false
   customChecks: true

@@ -17,8 +17,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aws-cloudformation/cloudformation-guard
-  stars: 1066
-  contributors: 29
+  stars: 1076
+  contributors: 30
   license: Apache-2.0
   backers: aws
 release:
