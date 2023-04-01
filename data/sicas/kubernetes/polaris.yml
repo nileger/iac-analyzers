@@ -14,13 +14,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/FairwindsOps/polaris
-  stars: 2833
-  contributors: 57
+  stars: 2848
+  contributors: 58
   license: Apache-2.0
   backers: fairwinds
 release:
   firstRelease:
-  lastRelease: 09.02.2023
+  lastRelease: 31.03.2023
 rules:
   builtInChecks: true
   customChecks: true

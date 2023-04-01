@@ -15,7 +15,7 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/stackrox/kube-linter
-  stars: 2229
+  stars: 2260
   contributors: 60
   license: Apache-2.0
   backers: stackrox
