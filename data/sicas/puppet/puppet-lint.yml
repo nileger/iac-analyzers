@@ -19,7 +19,7 @@ repository:
   backers: puppetlabs
 release:
   firstRelease: 15.08.2011
-  lastRelease: 07.03.2023
+  lastRelease: 05.04.2023
 rules:
   builtInChecks: true
   customChecks: true
