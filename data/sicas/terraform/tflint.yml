@@ -12,13 +12,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/terraform-linters/tflint
-  stars: 3709
-  contributors: 86
+  stars: 3766
+  contributors: 87
   license: MPL-2.0
   backers: community
 release:
   firstRelease: 27.11.2016
-  lastRelease: 12.02.2023
+  lastRelease: 08.04.2023
 rules:
   builtInChecks: true
   customChecks: true

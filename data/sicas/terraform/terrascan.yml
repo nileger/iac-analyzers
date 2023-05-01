@@ -24,13 +24,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/tenable/terrascan
-  stars: 3910
-  contributors: 82
+  stars: 3970
+  contributors: 83
   license: Apache-2.0
   backers: tenable
 release:
   firstRelease: 28.07.2017
-  lastRelease: 06.02.2023
+  lastRelease: 14.04.2023
 rules:
   builtInChecks: true
   customChecks: true

@@ -32,13 +32,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/github/super-linter
-  stars: 8574
-  contributors: 201
+  stars: 8630
+  contributors: 202
   license: MIT
   backers: github
 release:
   firstRelease: 14.05.2020
-  lastRelease: 17.01.2023
+  lastRelease: 11.04.2023
 rules:
   builtInChecks:
   customChecks:

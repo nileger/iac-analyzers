@@ -24,13 +24,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aquasecurity/trivy
-  stars: 16491
-  contributors: 286
+  stars: 16774
+  contributors: 288
   license: Apache-2.0
   backers: aquasecurity
 release:
   firstRelease: 07.05.2019
-  lastRelease: 02.03.2023
+  lastRelease: 14.03.2023
 rules:
   builtInChecks: true
   customChecks: true
