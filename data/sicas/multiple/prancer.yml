@@ -23,7 +23,7 @@ repository:
   backers: prancer
 release:
   firstRelease: 15.02.2019
-  lastRelease: 16.03.2023
+  lastRelease: 06.04.2023
 rules:
   builtInChecks: true
   customChecks: true
