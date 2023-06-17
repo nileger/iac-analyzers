@@ -15,7 +15,7 @@ developmentSupport:
 repository:
   url: https://github.com/stelligent/cfn_nag
   stars: 1146
-  contributors: 51
+  contributors: 52
   license: MIT
   backers: mphasis stelligent
 release:
