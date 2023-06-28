@@ -14,7 +14,7 @@ developmentSupport:
 repository:
   url: https://github.com/chef/cookstyle
   stars: 105
-  contributors: 35
+  contributors: 36
   license: Apache-2.0
   backers: chef
 release:
