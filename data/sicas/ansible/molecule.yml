@@ -20,13 +20,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/ansible-community/molecule
-  stars: 3533
-  contributors: 290
+  stars: 3552
+  contributors: 293
   license: MIT
   backers: community
 release:
   firstRelease: 12.04.2019
-  lastRelease: 05.12.2022
+  lastRelease: 20.04.2023
 rules:
   builtInChecks:
   customChecks:

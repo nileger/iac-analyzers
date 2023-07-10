@@ -12,13 +12,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/duo-labs/parliament
-  stars: 918
+  stars: 924
   contributors: 28
   license: BSD-3
   backers: duo security
 release:
   firstRelease: 20.11.2019
-  lastRelease: 06.09.2022
+  lastRelease: 06.07.2023
 rules:
   builtInChecks: true
   customChecks: true

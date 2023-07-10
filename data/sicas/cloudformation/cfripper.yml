@@ -12,8 +12,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/Skyscanner/cfripper
-  stars: 373
-  contributors: 23
+  stars: 375
+  contributors: 24
   license: Apache-2.0
   backers: scyscanner
 release:

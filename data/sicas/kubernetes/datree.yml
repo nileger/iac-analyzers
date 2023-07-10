@@ -25,13 +25,13 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/datreeio/datree
-  stars: 6216
-  contributors: 63
+  stars: 6241
+  contributors: 64
   license: Apache-2.0
   backers: datree
 release:
   firstRelease: 14.04.2021
-  lastRelease: 28.03.2023
+  lastRelease: 16.04.2023
 rules:
   builtInChecks: true
   customChecks: true

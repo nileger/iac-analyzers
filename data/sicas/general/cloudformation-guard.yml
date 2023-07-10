@@ -17,13 +17,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aws-cloudformation/cloudformation-guard
-  stars: 1086
-  contributors: 30
+  stars: 1095
+  contributors: 32
   license: Apache-2.0
   backers: aws
 release:
   firstRelease: 16.06.2020
-  lastRelease: 10.11.2022
+  lastRelease: 09.06.2023
 rules:
   builtInChecks: true
   customChecks: true

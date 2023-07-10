@@ -32,8 +32,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/github/super-linter
-  stars: 8630
-  contributors: 202
+  stars: 2
+  contributors: 214
   license: MIT
   backers: github
 release:

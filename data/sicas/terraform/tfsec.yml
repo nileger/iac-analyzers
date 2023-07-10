@@ -18,8 +18,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aquasecurity/tfsec
-  stars: 5728
-  contributors: 114
+  stars: 5818
+  contributors: 115
   license: MIT
   backers: aquasecurity
 release:
