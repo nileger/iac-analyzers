@@ -7,12 +7,12 @@ COPY ./backend/*.go ./
 COPY ./backend/docs ./docs
 RUN go build -o bin/main
 
-FROM node:13.12.0-alpine as react-builder
+FROM node:20.11.0-alpine as react-builder
 WORKDIR /app
 COPY ./frontend/package.json ./
 COPY ./frontend/package-lock.json ./ 
 RUN npm ci --silent \
- && npm install react-scripts@3.4.1 -g --silent
+ && npm install react-scripts@5.0.1 -g --silent
 COPY ./frontend ./
 RUN npm run build
 
