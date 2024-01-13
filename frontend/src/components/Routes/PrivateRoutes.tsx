@@ -1,13 +1,13 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import MainView from "../MainView";
 
 const PrivateRoutes: React.FC = () => {
   return (
-    <Switch>
-      <Route path="/" component={MainView} />
-    </Switch>
+    <Routes>
+      <Route path="/" Component={MainView} />
+    </Routes>
   );
 };
 
