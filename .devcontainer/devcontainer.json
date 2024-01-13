@@ -20,7 +20,7 @@
 	"forwardPorts": [
 		8080
 	],
-	"postCreateCommand": "cd frontend && npm install",
+	"postCreateCommand": "cd frontend && npm install && npm install npm-check-updates -g",
 	"customizations": {
 		"vscode": {
 			"settings": {
