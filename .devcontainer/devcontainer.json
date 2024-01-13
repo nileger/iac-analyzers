@@ -18,7 +18,8 @@
 		}
 	},
 	"forwardPorts": [
-		8080
+		8080,
+		3000
 	],
 	"postCreateCommand": "cd frontend && npm install && npm install npm-check-updates -g",
 	"customizations": {
