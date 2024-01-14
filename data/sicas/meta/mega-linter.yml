@@ -133,13 +133,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/oxsecurity/megalinter
-  stars: 1241
-  contributors: 82
+  stars: 1593
+  contributors: 99
   license: AGPL-3.0
   backers: oxsecurity
 release:
   firstRelease: 17.10.2020
-  lastRelease: 03.04.2023
+  lastRelease: 09.12.2023
 rules:
   builtInChecks: true
   customChecks: true

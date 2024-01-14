@@ -21,7 +21,7 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/fugue/regula
-  stars: 849
+  stars: 908
   contributors: 29
   license: Apache-2.0
   backers: fugue
