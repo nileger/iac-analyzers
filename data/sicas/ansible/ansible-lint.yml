@@ -13,7 +13,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/ansible/ansible-lint
-  stars: 3245
+  stars: 3246
   contributors: 288
   license: GPL-3.0
   backers: community
