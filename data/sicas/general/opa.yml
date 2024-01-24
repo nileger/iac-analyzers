@@ -14,7 +14,7 @@ developmentSupport:
 repository:
   url: https://github.com/open-policy-agent/opa
   stars: 8801
-  contributors: 436
+  contributors: 437
   license: Apache-2.0
   backers: open policy agent
 release:
