@@ -20,7 +20,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/armosec/kubescape
-  stars: 9427
+  stars: 9430
   contributors: 132
   license: Apache-2.0
   backers: armo

@@ -20,13 +20,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/infracost/infracost
-  stars: 9918
+  stars: 9923
   contributors: 83
   license: Apache-2.0
   backers: infracost
 release:
   firstRelease: 24.06.2020
-  lastRelease: 06.12.2023
+  lastRelease: 15.01.2024
 rules:
   builtInChecks: true
   customChecks: false
