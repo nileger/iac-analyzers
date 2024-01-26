@@ -21,7 +21,7 @@ developmentSupport:
 repository:
   url: https://github.com/ansible-community/molecule
   stars: 3744
-  contributors: 314
+  contributors: 315
   license: MIT
   backers: community
 release:
