@@ -24,7 +24,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/tenable/terrascan
-  stars: 4344
+  stars: 4359
   contributors: 88
   license: Apache-2.0
   backers: tenable

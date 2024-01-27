@@ -24,7 +24,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/aquasecurity/trivy
-  stars: 19967
+  stars: 20178
   contributors: 356
   license: Apache-2.0
   backers: aquasecurity
