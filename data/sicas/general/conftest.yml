@@ -28,12 +28,12 @@ developmentSupport:
 repository:
   url: https://github.com/open-policy-agent/conftest
   stars: 2747
-  contributors: 101
+  contributors: 102
   license: Apache-2.0
   backers: open-policy-agent
 release:
   firstRelease: 30.05.2019
-  lastRelease: 03.01.2024
+  lastRelease: 01.02.2024
 rules:
   builtInChecks: false
   customChecks: true
