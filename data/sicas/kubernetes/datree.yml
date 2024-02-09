@@ -25,7 +25,7 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/datreeio/datree
-  stars: 6384
+  stars: 6392
   contributors: 68
   license: Apache-2.0
   backers: datree

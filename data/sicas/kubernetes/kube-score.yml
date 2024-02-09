@@ -14,13 +14,13 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/zegl/kube-score
-  stars: 2456
+  stars: 2476
   contributors: 39
   license: MIT
   backers: community
 release:
   firstRelease: 26.09.2018
-  lastRelease: 06.07.2023
+  lastRelease: 05.02.2024
 rules:
   builtInChecks: true
   customChecks: false
