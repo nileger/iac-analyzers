@@ -13,8 +13,8 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/open-policy-agent/opa
-  stars: 8848
-  contributors: 438
+  stars: 8889
+  contributors: 440
   license: Apache-2.0
   backers: open policy agent
 release:

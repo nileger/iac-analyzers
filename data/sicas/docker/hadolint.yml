@@ -28,7 +28,7 @@ developmentSupport:
     - pre-commit hook
 repository:
   url: https://github.com/hadolint/hadolint
-  stars: 9416
+  stars: 9465
   contributors: 119
   license: GPL-3.0
   backers: community

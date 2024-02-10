@@ -13,7 +13,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/yannh/kubeconform
-  stars: 1654
+  stars: 1692
   contributors: 33
   license: Apache-2.0
   backers: community

@@ -12,7 +12,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/terraform-linters/tflint
-  stars: 4416
+  stars: 4448
   contributors: 90
   license: MPL-2.0
   backers: community

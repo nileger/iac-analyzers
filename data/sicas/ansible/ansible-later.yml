@@ -18,7 +18,7 @@ repository:
   backers: Geeklab
 release:
   firstRelease: 19.12.2019
-  lastRelease: 31.01.2024
+  lastRelease: 01.02.2024
 rules:
   builtInChecks: true
   customChecks: true
