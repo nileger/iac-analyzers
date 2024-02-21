@@ -20,7 +20,7 @@ developmentSupport:
 repository:
   url: https://github.com/returntocorp/semgrep
   stars: 9386
-  contributors: 177
+  contributors: 178
   license: GNU2
   backers: r2c
 release:
