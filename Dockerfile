@@ -17,7 +17,7 @@ COPY ./frontend ./
 RUN npm run build
 
 FROM alpine:3.16
-RUN apk --no-cache add ca-certificates=20230506-r0
+RUN apk --no-cache add ca-certificates-20240226-r0
 WORKDIR /usr/local/bin/
 COPY ./data/ /usr/local/data/
 COPY --from=go-builder /app/bin/main /usr/local/bin/
