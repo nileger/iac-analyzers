@@ -18,7 +18,7 @@ repository:
   backers: gruntwork
 release:
   firstRelease: 13.06.2016
-  lastRelease: 16.01.2024
+  lastRelease: 18.03.2024
 rules:
   builtInChecks: false
   customChecks: true
