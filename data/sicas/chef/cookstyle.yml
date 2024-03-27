@@ -13,7 +13,7 @@ developmentSupport:
   vc:
 repository:
   url: https://github.com/chef/cookstyle
-  stars: 107
+  stars: 106
   contributors: 38
   license: Apache-2.0
   backers: chef
