@@ -19,7 +19,7 @@ developmentSupport:
 repository:
   url: https://github.com/aws-cloudformation/cfn-lint
   stars: 2317
-  contributors: 171
+  contributors: 172
   license: MIT
   backers: aws
 release:
