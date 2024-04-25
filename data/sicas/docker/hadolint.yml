@@ -29,7 +29,7 @@ developmentSupport:
 repository:
   url: https://github.com/hadolint/hadolint
   stars: 9465
-  contributors: 119
+  contributors: 122
   license: GPL-3.0
   backers: community
 release:
