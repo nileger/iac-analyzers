@@ -14,12 +14,12 @@ developmentSupport:
 repository:
   url: https://github.com/yannh/kubeconform
   stars: 1692
-  contributors: 33
+  contributors: 35
   license: Apache-2.0
   backers: community
 release:
   firstRelease: 07.06.2020
-  lastRelease: 18.11.2023
+  lastRelease: 09.05.2024
 rules:
   builtInChecks: true
   customChecks: false
