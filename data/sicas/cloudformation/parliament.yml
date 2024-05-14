@@ -13,7 +13,7 @@ developmentSupport:
 repository:
   url: https://github.com/duo-labs/parliament
   stars: 975
-  contributors: 28
+  contributors: 30
   license: BSD-3
   backers: duo security
 release:
